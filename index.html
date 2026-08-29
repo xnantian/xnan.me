@@ -1,0 +1,2443 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#06080c" />
+  <meta name="description" content="《心元：零时之后》官方作品页与精选试读。基于 32 章完结稿制作，包含无剧透简介、精选正文、完整目录、人物与世界观档案。" />
+  <meta name="author" content="xnan" />
+  <meta property="og:title" content="心元：零时之后" />
+  <meta property="og:description" content="八千六百万人，在四十七秒内失去思想边界。一部长篇思想科幻的官方作品页与精选试读。" />
+  <meta property="og:type" content="website" />
+  <title>心元：零时之后｜官方作品页与精选试读｜xnan</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "心元：零时之后",
+    "alternateName": "心孔·宇宙",
+    "author": {"@type": "Person", "name": "xnan"},
+    "inLanguage": "zh-CN",
+    "genre": ["科幻小说", "思想科幻", "人工智能", "意识哲学"],
+    "wordCount": 120584,
+    "description": "一部关于人工智能、意识、时间货币、未来人权与拒绝权的原创长篇科幻小说。"
+  }
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2306080c'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%2394eadb' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%2306080c' stroke='%23f0c57b'/%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --bg: #06080c;
+      --bg-soft: #0b0f15;
+      --panel: rgba(15, 20, 28, .76);
+      --panel-solid: #111720;
+      --ink: #f1efe7;
+      --muted: #969eaa;
+      --dim: #66707c;
+      --line: rgba(255,255,255,.105);
+      --line-strong: rgba(255,255,255,.21);
+      --cyan: #94eadb;
+      --cyan-2: #50b9b0;
+      --gold: #efc77f;
+      --red: #e4776f;
+      --blue: #82aaff;
+      --shadow: 0 25px 80px rgba(0,0,0,.34);
+      --serif: "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", STSong, SimSun, serif;
+      --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      --reading-scale: 1;
+      --max: 1240px;
+      --nav-h: 64px;
+    }
+
+    html[data-theme="paper"] {
+      --bg: #eeeae0;
+      --bg-soft: #e3ded2;
+      --panel: rgba(250, 248, 241, .78);
+      --panel-solid: #faf8f1;
+      --ink: #191d22;
+      --muted: #626972;
+      --dim: #888e95;
+      --line: rgba(17,22,28,.11);
+      --line-strong: rgba(17,22,28,.22);
+      --cyan: #087f78;
+      --cyan-2: #1a9489;
+      --gold: #9a650c;
+      --red: #b44d49;
+      --blue: #3e64b7;
+      --shadow: 0 24px 70px rgba(60,47,25,.13);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; background: var(--bg); }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 15% 8%, rgba(80,185,176,.075), transparent 27rem),
+        radial-gradient(circle at 88% 18%, rgba(130,170,255,.055), transparent 31rem),
+        var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.75;
+      overflow-x: hidden;
+      transition: background-color .35s ease, color .35s ease;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      pointer-events: none;
+      opacity: .035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
+      mix-blend-mode: overlay;
+    }
+
+    a { color: inherit; }
+    button, input { font: inherit; }
+    button { color: inherit; }
+    ::selection { background: rgba(148,234,219,.24); color: var(--ink); }
+
+    #cosmos {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      opacity: .72;
+    }
+
+    .scroll-progress {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: 2px;
+      z-index: 120;
+      background: transparent;
+    }
+    .scroll-progress span {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--cyan), var(--gold));
+      box-shadow: 0 0 18px rgba(148,234,219,.65);
+    }
+
+    .nav {
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      padding: 0 max(22px, calc((100vw - var(--max)) / 2));
+      border-bottom: 1px solid transparent;
+      background: linear-gradient(to bottom, rgba(6,8,12,.78), rgba(6,8,12,0));
+      backdrop-filter: blur(0px);
+      transition: .3s ease;
+    }
+    html[data-theme="paper"] .nav { background: linear-gradient(to bottom, rgba(238,234,224,.9), rgba(238,234,224,0)); }
+    .nav.scrolled {
+      background: color-mix(in srgb, var(--bg) 82%, transparent);
+      border-color: var(--line);
+      backdrop-filter: blur(18px) saturate(135%);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-width: max-content;
+      text-decoration: none;
+      font-family: var(--serif);
+      font-weight: 700;
+      letter-spacing: .16em;
+    }
+    .brand-mark {
+      width: 24px;
+      aspect-ratio: 1;
+      border: 1px solid var(--cyan);
+      border-radius: 50%;
+      position: relative;
+      box-shadow: inset 0 0 14px rgba(148,234,219,.18), 0 0 14px rgba(148,234,219,.12);
+    }
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      inset: 7px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 1px solid var(--gold);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-left: auto;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a {
+      position: relative;
+      text-decoration: none;
+      white-space: nowrap;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: .08em;
+      transition: color .2s ease;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--ink); }
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: -9px;
+      height: 1px;
+      background: var(--cyan);
+      transition: right .25s ease;
+    }
+    .nav-links a.active::after { right: 0; }
+    .nav-tools { display: flex; gap: 8px; margin-left: 4px; }
+    .icon-btn, .compact-btn {
+      border: 1px solid var(--line);
+      background: color-mix(in srgb, var(--panel-solid) 70%, transparent);
+      border-radius: 999px;
+      cursor: pointer;
+      transition: .22s ease;
+    }
+    .icon-btn {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      padding: 0;
+    }
+    .icon-btn:hover, .compact-btn:hover { border-color: var(--line-strong); transform: translateY(-1px); }
+    .icon-btn svg { width: 17px; height: 17px; }
+
+    main { position: relative; }
+    .wrap { width: min(var(--max), calc(100% - 44px)); margin-inline: auto; }
+    .section { padding: 120px 0; position: relative; scroll-margin-top: 72px; }
+    .section-sm { padding: 82px 0; }
+    .section-line { border-top: 1px solid var(--line); }
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, .55fr);
+      gap: 52px;
+      align-items: end;
+      margin-bottom: 54px;
+    }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin: 0 0 14px;
+      color: var(--cyan);
+      font: 700 11px/1.3 var(--mono);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 24px; height: 1px; background: currentColor; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, .serif { font-family: var(--serif); }
+    h2 {
+      margin-bottom: 0;
+      font-size: clamp(42px, 6vw, 76px);
+      font-weight: 600;
+      line-height: 1.08;
+      letter-spacing: -.04em;
+    }
+    .lead {
+      color: var(--muted);
+      font-size: calc(17px * var(--reading-scale));
+      line-height: 1.95;
+      margin: 0;
+    }
+    .micro { color: var(--dim); font-size: 12px; line-height: 1.8; }
+    .mono { font-family: var(--mono); }
+    .accent { color: var(--cyan); }
+    .gold { color: var(--gold); }
+    .red { color: var(--red); }
+
+    .hero {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: calc(var(--nav-h) + 56px) 0 58px;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, transparent 0 68%, var(--bg) 100%),
+        radial-gradient(circle at 69% 45%, rgba(80,185,176,.11), transparent 27%),
+        radial-gradient(circle at 78% 52%, rgba(239,199,127,.055), transparent 17%);
+      pointer-events: none;
+    }
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(380px, .9fr);
+      gap: 40px;
+      align-items: center;
+    }
+    .hero-copy { padding: 40px 0 0; }
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 13px;
+      color: var(--muted);
+      font: 600 10px/1 var(--mono);
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      background: color-mix(in srgb, var(--panel) 72%, transparent);
+      backdrop-filter: blur(12px);
+    }
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 10px var(--cyan);
+      animation: blink 2.2s ease-in-out infinite;
+    }
+    @keyframes blink { 50% { opacity: .28; transform: scale(.76); } }
+    .hero-title {
+      margin: 38px 0 18px;
+      font-size: clamp(82px, 13vw, 176px);
+      line-height: .78;
+      font-weight: 700;
+      letter-spacing: -.11em;
+      text-indent: -.07em;
+      text-shadow: 0 0 80px rgba(148,234,219,.08);
+    }
+    .hero-title .outline {
+      color: transparent;
+      -webkit-text-stroke: 1px color-mix(in srgb, var(--ink) 45%, transparent);
+      text-shadow: none;
+    }
+    .hero-subtitle {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin: 0 0 28px;
+      font-family: var(--serif);
+      font-size: clamp(25px, 3.2vw, 46px);
+      letter-spacing: .14em;
+    }
+    .hero-subtitle::after { content: ""; width: min(130px, 18vw); height: 1px; background: linear-gradient(90deg, var(--gold), transparent); }
+    .hero-description {
+      max-width: 690px;
+      margin-bottom: 30px;
+      color: var(--muted);
+      font-size: calc(17px * var(--reading-scale));
+      line-height: 2;
+    }
+    .hero-description strong { color: var(--ink); font-weight: 550; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 46px;
+      padding: 0 19px;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 650;
+      letter-spacing: .04em;
+      transition: transform .2s ease, border-color .2s ease, background .2s ease;
+      backdrop-filter: blur(14px);
+    }
+    .btn:hover { transform: translateY(-2px); border-color: var(--line-strong); }
+    .btn-primary { color: #07100e; background: var(--cyan); border-color: var(--cyan); }
+    html[data-theme="paper"] .btn-primary { color: white; }
+    .btn svg { width: 15px; height: 15px; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 18px; color: var(--dim); font: 11px/1.6 var(--mono); }
+    .hero-meta span { display: inline-flex; align-items: center; gap: 8px; }
+    .hero-meta span::before { content: ""; width: 4px; height: 4px; border-radius: 50%; background: var(--gold); }
+
+    .hero-visual {
+      min-height: 620px;
+      position: relative;
+      display: grid;
+      place-items: center;
+      perspective: 1200px;
+    }
+    .orbit-stage {
+      width: min(560px, 100%);
+      aspect-ratio: 1;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform .18s ease-out;
+    }
+    .halo {
+      position: absolute;
+      inset: 4%;
+      border-radius: 50%;
+      background: radial-gradient(circle, transparent 0 46%, rgba(148,234,219,.02) 47%, rgba(148,234,219,.085) 49%, transparent 51%);
+      filter: blur(1px);
+      animation: halo 8s ease-in-out infinite;
+    }
+    @keyframes halo { 50% { transform: scale(1.035); opacity: .63; } }
+    .orbit {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      transform: translate(-50%, -50%);
+    }
+    .orbit.o1 { width: 88%; height: 43%; transform: translate(-50%,-50%) rotate(-11deg); }
+    .orbit.o2 { width: 72%; height: 72%; border-color: rgba(148,234,219,.21); animation: spin 18s linear infinite; }
+    .orbit.o3 { width: 52%; height: 96%; transform: translate(-50%,-50%) rotate(37deg); border-color: rgba(239,199,127,.17); }
+    @keyframes spin { to { transform: translate(-50%,-50%) rotate(360deg); } }
+    .void-ring {
+      position: absolute;
+      inset: 25%;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 42% 35%, rgba(255,255,255,.08), transparent 13%),
+        radial-gradient(circle at center, #030405 0 39%, transparent 40%),
+        conic-gradient(from 230deg, rgba(148,234,219,.05), rgba(148,234,219,.75), rgba(239,199,127,.53), rgba(148,234,219,.07));
+      box-shadow:
+        0 0 110px rgba(80,185,176,.17),
+        inset 0 0 42px rgba(255,255,255,.06),
+        inset 0 0 90px rgba(148,234,219,.13);
+      animation: breathe 5.4s ease-in-out infinite;
+    }
+    .void-ring::before {
+      content: "";
+      position: absolute;
+      inset: 11%;
+      border-radius: 50%;
+      background: var(--bg);
+      box-shadow: inset 0 0 32px rgba(148,234,219,.08);
+    }
+    .void-ring::after {
+      content: "1 ≡ 0";
+      position: relative;
+      z-index: 2;
+      color: var(--ink);
+      font: 500 clamp(18px, 3vw, 31px)/1 var(--mono);
+      letter-spacing: .18em;
+      opacity: .82;
+    }
+    @keyframes breathe { 50% { transform: scale(.975); filter: saturate(.8); } }
+    .orbit-node {
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 16px var(--cyan);
+    }
+    .n1 { left: 13%; top: 46%; animation: nodePulse 2.5s ease infinite; }
+    .n2 { right: 14%; top: 31%; background: var(--gold); box-shadow: 0 0 16px var(--gold); animation: nodePulse 2.5s .8s ease infinite; }
+    .n3 { right: 31%; bottom: 10%; animation: nodePulse 2.5s 1.3s ease infinite; }
+    @keyframes nodePulse { 50% { transform: scale(.45); opacity: .35; } }
+    .orbit-label {
+      position: absolute;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      background: var(--panel);
+      backdrop-filter: blur(11px);
+      font: 10px/1 var(--mono);
+      letter-spacing: .1em;
+    }
+    .l1 { top: 17%; left: 7%; }
+    .l2 { right: 2%; top: 52%; }
+    .l3 { left: 17%; bottom: 13%; }
+    .signal-card {
+      position: absolute;
+      right: -3%;
+      bottom: 3%;
+      width: 258px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px;
+      background: color-mix(in srgb, var(--panel-solid) 84%, transparent);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(20px);
+    }
+    .signal-head { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); font: 10px/1.4 var(--mono); letter-spacing: .08em; }
+    .signal-live { color: var(--red); }
+    .signal-main { display: grid; grid-template-columns: 1.3fr .7fr; gap: 12px; margin-top: 16px; }
+    .signal-main strong { display: block; font: 600 27px/1 var(--mono); letter-spacing: -.05em; }
+    .signal-main span { display: block; margin-top: 8px; color: var(--dim); font-size: 10px; }
+    .signal-wave { display: flex; align-items: end; gap: 3px; height: 34px; margin-top: 15px; }
+    .signal-wave i { flex: 1; height: 10%; background: linear-gradient(to top, var(--cyan), transparent); opacity: .7; animation: wave 1.3s ease-in-out infinite alternate; }
+    .signal-wave i:nth-child(2n) { animation-delay: -.3s; }
+    .signal-wave i:nth-child(3n) { animation-delay: -.7s; }
+    @keyframes wave { to { height: 92%; } }
+
+    .archive-ribbon {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--panel-solid) 48%, transparent);
+      overflow: hidden;
+    }
+    .ribbon-track {
+      width: max-content;
+      display: flex;
+      gap: 42px;
+      padding: 14px 0;
+      color: var(--dim);
+      font: 10px/1 var(--mono);
+      letter-spacing: .14em;
+      animation: marquee 34s linear infinite;
+    }
+    .ribbon-track span::before { content: "◌"; color: var(--cyan); margin-right: 13px; }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+
+    .manifesto-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(330px, .85fr);
+      gap: 58px;
+      align-items: start;
+    }
+    .story-copy {
+      font-family: var(--serif);
+      font-size: calc(clamp(22px, 2.5vw, 33px) * var(--reading-scale));
+      line-height: 1.75;
+      letter-spacing: .01em;
+    }
+    .story-copy p { margin-bottom: 1.2em; }
+    .story-copy .drop::first-letter {
+      float: left;
+      font-size: 4.4em;
+      line-height: .76;
+      padding: .12em .12em 0 0;
+      color: var(--cyan);
+    }
+    .question-stack { position: sticky; top: 94px; display: grid; gap: 12px; }
+    .question {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px;
+      background: var(--panel);
+      backdrop-filter: blur(13px);
+      transition: .25s ease;
+    }
+    .question:hover { border-color: var(--line-strong); transform: translateX(-4px); }
+    .question b { display: block; margin-bottom: 8px; color: var(--gold); font: 600 11px/1 var(--mono); letter-spacing: .1em; }
+    .question p { margin: 0; font-family: var(--serif); font-size: 17px; line-height: 1.75; }
+
+    .meaning-stage {
+      min-height: 620px;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+      border-block: 1px solid var(--line);
+      background:
+        radial-gradient(circle at center, rgba(148,234,219,.08), transparent 27rem),
+        color-mix(in srgb, var(--bg-soft) 65%, transparent);
+    }
+    .meaning-stage::before, .meaning-stage::after {
+      content: "";
+      position: absolute;
+      width: 470px;
+      height: 470px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+    }
+    .meaning-stage::before { transform: translate(-42%, -25%); left: 0; top: 0; }
+    .meaning-stage::after { transform: translate(42%, 30%); right: 0; bottom: 0; }
+    .meaning-copy { width: min(980px, calc(100% - 44px)); text-align: center; position: relative; z-index: 2; }
+    .meaning-copy small { color: var(--cyan); font: 700 11px/1 var(--mono); letter-spacing: .18em; }
+    .meaning-copy h2 { margin: 28px 0 30px; font-size: clamp(45px, 7vw, 92px); line-height: 1.16; }
+    .meaning-copy p { max-width: 780px; margin: 0 auto; color: var(--muted); font-size: calc(17px * var(--reading-scale)); line-height: 2; }
+    .meaning-equation { display: flex; justify-content: center; flex-wrap: wrap; gap: 9px; margin-top: 34px; }
+    .meaning-equation span { padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--dim); font: 10px/1 var(--mono); letter-spacing: .09em; }
+
+    .world-layout {
+      display: grid;
+      grid-template-columns: minmax(0, .84fr) minmax(0, 1.16fr);
+      gap: 44px;
+      align-items: stretch;
+    }
+    .system-map {
+      position: relative;
+      min-height: 640px;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      overflow: hidden;
+      background:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px),
+        radial-gradient(circle at center, rgba(148,234,219,.12), transparent 32%),
+        var(--panel);
+      background-size: 42px 42px, 42px 42px, auto, auto;
+      box-shadow: var(--shadow);
+    }
+    .system-map svg { position: absolute; inset: 8%; width: 84%; height: 84%; overflow: visible; }
+    .system-map line { stroke: var(--line-strong); stroke-width: 1; stroke-dasharray: 3 6; }
+    .system-map .flow { stroke: var(--cyan); stroke-dasharray: 5 8; opacity: .45; animation: dash 12s linear infinite; }
+    @keyframes dash { to { stroke-dashoffset: -130; } }
+    .map-node {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      width: 108px;
+      height: 108px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      border: 1px solid var(--line-strong);
+      background: color-mix(in srgb, var(--panel-solid) 84%, transparent);
+      box-shadow: 0 0 28px rgba(0,0,0,.18);
+      font: 600 11px/1.35 var(--mono);
+      letter-spacing: .07em;
+      transition: .25s ease;
+    }
+    .map-node small { display: block; color: var(--dim); font-size: 8px; margin-top: 5px; }
+    .map-node.center { left: 50%; top: 50%; width: 152px; height: 152px; border-color: var(--cyan); color: var(--cyan); box-shadow: 0 0 55px rgba(148,234,219,.13); }
+    .map-node.a { left: 20%; top: 22%; }
+    .map-node.b { left: 80%; top: 19%; }
+    .map-node.c { left: 83%; top: 72%; }
+    .map-node.d { left: 19%; top: 78%; }
+    .map-node:hover { transform: translate(-50%, -50%) scale(1.05); border-color: var(--cyan); }
+    .glossary-shell { border-top: 1px solid var(--line); }
+    .glossary-row {
+      display: grid;
+      grid-template-columns: 52px 1fr auto;
+      gap: 16px;
+      align-items: center;
+      width: 100%;
+      padding: 20px 0;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      background: none;
+      text-align: left;
+      cursor: pointer;
+    }
+    .glossary-row .num { color: var(--dim); font: 10px/1 var(--mono); }
+    .glossary-row b { display: block; font-family: var(--serif); font-size: 20px; font-weight: 560; }
+    .glossary-row span { display: block; color: var(--muted); font-size: 12px; margin-top: 3px; }
+    .glossary-row .arrow { color: var(--dim); font-size: 18px; transition: transform .2s ease; }
+    .glossary-row:hover .arrow { transform: translateX(5px); color: var(--cyan); }
+    .glossary-detail {
+      margin-top: 22px;
+      min-height: 170px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--panel);
+    }
+    .glossary-detail .top { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 14px; }
+    .glossary-detail h3 { margin: 0; font-family: var(--serif); font-size: 28px; font-weight: 600; }
+    .glossary-detail .code { color: var(--cyan); font: 10px/1.4 var(--mono); letter-spacing: .11em; }
+    .glossary-detail p { margin: 0; color: var(--muted); font-size: calc(14px * var(--reading-scale)); line-height: 1.9; }
+    .risk-line { display: flex; gap: 8px; margin-top: 18px; }
+    .risk-line i { height: 2px; flex: 1; background: var(--line); }
+    .risk-line i.on { background: var(--red); box-shadow: 0 0 8px rgba(228,119,111,.35); }
+
+    .character-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+    .character-card {
+      grid-column: span 4;
+      min-height: 390px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 26px;
+      background: var(--panel);
+      cursor: pointer;
+      transition: .3s ease;
+      isolation: isolate;
+    }
+    .character-card:nth-child(4), .character-card:nth-child(5) { grid-column: span 6; min-height: 330px; }
+    .character-card::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      right: -95px;
+      top: -90px;
+      border: 1px solid var(--line-strong);
+      box-shadow: inset 0 0 55px rgba(148,234,219,.04);
+      z-index: -1;
+      transition: .35s ease;
+    }
+    .character-card:hover { transform: translateY(-6px); border-color: var(--line-strong); box-shadow: var(--shadow); }
+    .character-card:hover::after { transform: scale(1.15); border-color: var(--cyan); }
+    .character-top { display: flex; justify-content: space-between; align-items: start; gap: 16px; }
+    .character-index { color: var(--cyan); font: 10px/1 var(--mono); letter-spacing: .1em; }
+    .character-age { color: var(--dim); font: 10px/1 var(--mono); }
+    .character-card h3 { margin: 58px 0 5px; font-family: var(--serif); font-size: 42px; font-weight: 620; letter-spacing: .06em; }
+    .character-role { color: var(--gold); font-size: 12px; letter-spacing: .09em; }
+    .character-card p { margin: 20px 0 0; color: var(--muted); font-size: calc(14px * var(--reading-scale)); line-height: 1.85; }
+    .character-axis { position: absolute; left: 26px; right: 26px; bottom: 24px; display: flex; align-items: center; gap: 8px; color: var(--dim); font: 9px/1 var(--mono); letter-spacing: .08em; }
+    .character-axis::before { content: ""; flex: 1; height: 1px; background: var(--line); order: 2; }
+    .character-axis span:last-child { order: 3; }
+
+    .timeline-shell { position: relative; }
+    .timeline-shell::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: calc(180px + 24px);
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, var(--line-strong) 5%, var(--line-strong) 95%, transparent);
+    }
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 180px 48px minmax(0, 1fr);
+      gap: 0;
+      align-items: start;
+      padding: 29px 0;
+    }
+    .timeline-year { font: 600 clamp(24px, 3vw, 40px)/1 var(--mono); letter-spacing: -.05em; }
+    .timeline-dot { width: 11px; height: 11px; margin: 8px auto 0; border-radius: 50%; background: var(--bg); border: 2px solid var(--cyan); box-shadow: 0 0 15px rgba(148,234,219,.32); position: relative; z-index: 2; }
+    .timeline-content { max-width: 720px; }
+    .timeline-content h3 { margin: 0 0 8px; font-family: var(--serif); font-size: 23px; font-weight: 580; }
+    .timeline-content p { margin: 0; color: var(--muted); font-size: calc(14px * var(--reading-scale)); line-height: 1.9; }
+    .timeline-item.now .timeline-year { color: var(--gold); }
+    .timeline-item.now .timeline-dot { border-color: var(--gold); box-shadow: 0 0 20px rgba(239,199,127,.4); }
+
+    .acts { display: grid; gap: 16px; }
+    .act-card {
+      display: grid;
+      grid-template-columns: 160px minmax(0, .9fr) minmax(270px, .65fr);
+      gap: 36px;
+      align-items: center;
+      min-height: 290px;
+      padding: 36px;
+      border: 1px solid var(--line);
+      border-radius: 25px;
+      background: var(--panel);
+      overflow: hidden;
+      position: relative;
+    }
+    .act-card::before {
+      content: attr(data-act);
+      position: absolute;
+      right: -16px;
+      bottom: -78px;
+      color: transparent;
+      -webkit-text-stroke: 1px var(--line-strong);
+      font: 700 220px/1 var(--serif);
+      opacity: .5;
+    }
+    .act-num { font: 500 70px/1 var(--serif); color: var(--cyan); }
+    .act-copy h3 { margin: 0 0 12px; font-family: var(--serif); font-size: clamp(27px, 3vw, 40px); font-weight: 600; }
+    .act-copy p { margin: 0; color: var(--muted); font-size: calc(14px * var(--reading-scale)); line-height: 1.9; }
+    .act-meta { position: relative; z-index: 2; }
+    .act-meta b { display: block; font: 600 26px/1 var(--mono); }
+    .act-meta span { display: block; margin-top: 10px; color: var(--dim); font: 10px/1.5 var(--mono); letter-spacing: .08em; }
+    .act-bar { display: flex; gap: 4px; margin-top: 18px; }
+    .act-bar i { width: 22px; height: 3px; background: var(--line); }
+    .act-card[data-act="01"] .act-bar i:nth-child(-n+2),
+    .act-card[data-act="02"] .act-bar i:nth-child(-n+4),
+    .act-card[data-act="03"] .act-bar i:nth-child(-n+6) { background: var(--cyan); }
+
+    .chapter-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 25px;
+    }
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; }
+    .compact-btn { min-height: 36px; padding: 0 13px; font-size: 11px; letter-spacing: .06em; }
+    .compact-btn.active { background: var(--cyan); border-color: var(--cyan); color: #07100e; }
+    html[data-theme="paper"] .compact-btn.active { color: white; }
+    .chapter-tools-right { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+    .search-box { position: relative; }
+    .search-box input {
+      width: min(260px, 72vw);
+      height: 38px;
+      padding: 0 38px 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      outline: none;
+      background: var(--panel);
+      color: var(--ink);
+      font-size: 12px;
+    }
+    .search-box input:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(148,234,219,.08); }
+    .search-box svg { position: absolute; right: 13px; top: 50%; transform: translateY(-50%); width: 14px; height: 14px; color: var(--dim); }
+    .spoiler-toggle { display: inline-flex; align-items: center; gap: 9px; padding: 0 12px; min-height: 38px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); cursor: pointer; color: var(--muted); font-size: 11px; }
+    .switch { width: 30px; height: 17px; border-radius: 999px; background: var(--line-strong); position: relative; transition: .2s ease; }
+    .switch::after { content: ""; position: absolute; width: 11px; height: 11px; left: 3px; top: 3px; border-radius: 50%; background: var(--ink); transition: .2s ease; }
+    .spoiler-toggle.on .switch { background: var(--red); }
+    .spoiler-toggle.on .switch::after { transform: translateX(13px); }
+
+    .chapter-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .chapter-card {
+      min-height: 210px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      background: var(--panel);
+      cursor: pointer;
+      transition: .25s ease;
+    }
+    .chapter-card:hover { transform: translateY(-4px); border-color: var(--line-strong); box-shadow: 0 18px 44px rgba(0,0,0,.16); }
+    .chapter-card.hidden { display: none; }
+    .chapter-top { display: flex; justify-content: space-between; gap: 10px; color: var(--dim); font: 9px/1.4 var(--mono); letter-spacing: .08em; }
+    .chapter-card h3 { margin: 31px 0 9px; font-family: var(--serif); font-size: 22px; font-weight: 580; }
+    .chapter-teaser { margin: 0; color: var(--muted); font-size: calc(12px * var(--reading-scale)); line-height: 1.75; }
+    .chapter-open { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 18px; color: var(--cyan); font: 9px/1 var(--mono); letter-spacing: .08em; }
+    .chapter-open i { width: 23px; height: 23px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; font-style: normal; font-size: 13px; }
+    .chapter-card[data-act="2"] .chapter-open { color: var(--gold); }
+    .chapter-card[data-act="3"] .chapter-open { color: var(--red); }
+    .chapter-empty { display: none; padding: 50px 20px; text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: 18px; }
+
+    dialog {
+      width: min(700px, calc(100% - 28px));
+      max-height: min(720px, calc(100svh - 40px));
+      padding: 0;
+      border: 1px solid var(--line-strong);
+      border-radius: 24px;
+      background: var(--panel-solid);
+      color: var(--ink);
+      box-shadow: 0 45px 130px rgba(0,0,0,.5);
+      overflow: hidden;
+    }
+    dialog::backdrop { background: rgba(0,0,0,.64); backdrop-filter: blur(8px); }
+    .dialog-inner { max-height: inherit; overflow: auto; padding: 34px; }
+    .dialog-close { position: sticky; z-index: 2; top: 0; float: right; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); background: var(--panel-solid); color: var(--ink); cursor: pointer; }
+    .dialog-kicker { color: var(--cyan); font: 10px/1 var(--mono); letter-spacing: .12em; }
+    .dialog-title { margin: 36px 0 12px; font-family: var(--serif); font-size: clamp(35px, 6vw, 54px); line-height: 1.1; }
+    .dialog-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 27px; }
+    .dialog-tags span { padding: 6px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--dim); font: 9px/1 var(--mono); }
+    .dialog-summary { font-family: var(--serif); font-size: calc(20px * var(--reading-scale)); line-height: 1.85; }
+    .dialog-function { margin-top: 24px; padding-top: 21px; border-top: 1px solid var(--line); color: var(--muted); font-size: calc(13px * var(--reading-scale)); line-height: 1.85; }
+    .spoiler-mask { position: relative; overflow: hidden; border-radius: 10px; }
+    body:not(.spoilers-on) .spoiler-mask::after {
+      content: "含结局信息 · 开启完整档案后查看";
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      text-align: center;
+      background: color-mix(in srgb, var(--panel-solid) 88%, transparent);
+      backdrop-filter: blur(12px);
+      color: var(--muted);
+      font: 10px/1.8 var(--mono);
+      letter-spacing: .08em;
+    }
+
+    .zero-section {
+      min-height: 760px;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+      border-block: 1px solid var(--line);
+      background:
+        linear-gradient(180deg, var(--bg), transparent 26%, transparent 74%, var(--bg)),
+        radial-gradient(circle at center, rgba(228,119,111,.08), transparent 34rem);
+    }
+    .zero-grid {
+      width: min(1060px, calc(100% - 44px));
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 68px;
+      align-items: center;
+    }
+    .zero-copy h2 { font-size: clamp(55px, 9vw, 124px); }
+    .zero-copy p { max-width: 470px; color: var(--muted); font-size: calc(15px * var(--reading-scale)); line-height: 1.95; }
+    .zero-notice { margin-top: 23px; padding-left: 14px; border-left: 1px solid var(--red); color: var(--dim); font-size: 11px; }
+    .zero-console {
+      position: relative;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+    }
+    .zero-console::before, .zero-console::after { content: ""; position: absolute; border-radius: 50%; border: 1px solid var(--line); }
+    .zero-console::before { inset: 2%; }
+    .zero-console::after { inset: 14%; border-style: dashed; animation: spin 32s linear infinite reverse; }
+    .count-ring {
+      width: 60%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      position: relative;
+      background: conic-gradient(var(--red) var(--zero-progress, 0%), var(--line) 0);
+      box-shadow: 0 0 70px rgba(228,119,111,.12);
+    }
+    .count-ring::before { content: ""; position: absolute; inset: 7px; border-radius: 50%; background: var(--bg-soft); }
+    .count-content { position: relative; z-index: 2; text-align: center; }
+    .count-value { display: block; font: 500 clamp(64px, 8vw, 106px)/1 var(--mono); letter-spacing: -.09em; }
+    .count-label { display: block; margin-top: 12px; color: var(--dim); font: 9px/1 var(--mono); letter-spacing: .15em; }
+    .zero-start { position: absolute; bottom: 9%; z-index: 3; }
+    body.zeroing .nav, body.zeroing .archive-ribbon { opacity: .18; }
+    body.zeroing #cosmos { opacity: .15; }
+    body.zeroing .count-ring { box-shadow: 0 0 130px rgba(228,119,111,.35); }
+    .zero-message { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none; opacity: 0; transform: scale(.92); transition: .5s ease; }
+    .zero-message strong { font-family: var(--serif); font-size: clamp(50px, 9vw, 110px); letter-spacing: .16em; }
+    .zero-message.show { opacity: 1; transform: scale(1); }
+
+    .theme-grid { display: grid; grid-template-columns: repeat(5, 1fr); border: 1px solid var(--line); border-radius: 24px; overflow: hidden; }
+    .theme-card { min-height: 280px; padding: 24px; border-right: 1px solid var(--line); background: var(--panel); }
+    .theme-card:last-child { border-right: 0; }
+    .theme-card .theme-index { color: var(--dim); font: 9px/1 var(--mono); }
+    .theme-card h3 { margin: 72px 0 13px; font-family: var(--serif); font-size: 25px; font-weight: 580; }
+    .theme-card p { margin: 0; color: var(--muted); font-size: calc(12px * var(--reading-scale)); line-height: 1.8; }
+
+    .final-quote {
+      padding: 150px 0;
+      text-align: center;
+      position: relative;
+    }
+    .final-quote blockquote {
+      max-width: 1020px;
+      margin: 0 auto;
+      font-family: var(--serif);
+      font-size: clamp(31px, 5vw, 66px);
+      line-height: 1.48;
+      letter-spacing: -.025em;
+    }
+    .final-quote cite { display: block; margin-top: 38px; color: var(--dim); font: normal 10px/1.6 var(--mono); letter-spacing: .12em; }
+
+    .version-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(300px, .65fr);
+      gap: 50px;
+      padding: 42px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--panel);
+    }
+    .version-card h2 { font-size: clamp(38px, 5vw, 65px); }
+    .version-card p { color: var(--muted); font-size: calc(14px * var(--reading-scale)); line-height: 1.95; }
+    .version-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .version-stat { min-height: 118px; padding: 18px; border: 1px solid var(--line); border-radius: 16px; }
+    .version-stat b { display: block; font: 600 27px/1 var(--mono); }
+    .version-stat span { display: block; margin-top: 10px; color: var(--dim); font-size: 10px; line-height: 1.5; }
+
+    footer { border-top: 1px solid var(--line); padding: 42px 0 60px; }
+    .footer-grid { display: flex; justify-content: space-between; gap: 30px; align-items: end; }
+    .footer-title { font-family: var(--serif); font-size: 30px; letter-spacing: .12em; }
+    .footer-meta { color: var(--dim); text-align: right; font: 10px/1.9 var(--mono); letter-spacing: .08em; }
+
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .75s ease, transform .75s cubic-bezier(.2,.7,.2,1); }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    .sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .toast { position: fixed; left: 50%; bottom: 24px; z-index: 130; transform: translate(-50%, 20px); opacity: 0; pointer-events: none; padding: 10px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel-solid); box-shadow: var(--shadow); color: var(--muted); font-size: 11px; transition: .25s ease; }
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+    @media (max-width: 1080px) {
+      .nav-links { display: none; }
+      .nav-tools { margin-left: auto; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-copy { z-index: 3; }
+      .hero-visual { min-height: 520px; margin-top: -40px; }
+      .orbit-stage { width: min(510px, 92vw); }
+      .signal-card { right: 1%; }
+      .world-layout { grid-template-columns: 1fr; }
+      .system-map { min-height: 580px; }
+      .chapter-grid { grid-template-columns: repeat(3, 1fr); }
+      .theme-grid { grid-template-columns: repeat(2, 1fr); }
+      .theme-card { border-bottom: 1px solid var(--line); }
+      .theme-card:nth-child(2n) { border-right: 0; }
+      .theme-card:last-child { grid-column: span 2; border-bottom: 0; }
+    }
+
+    @media (max-width: 780px) {
+      :root { --nav-h: 58px; }
+      .wrap { width: min(100% - 28px, var(--max)); }
+      .section { padding: 86px 0; }
+      .section-head { grid-template-columns: 1fr; gap: 20px; margin-bottom: 38px; }
+      .hero { padding-top: 104px; }
+      .hero-title { font-size: clamp(74px, 25vw, 124px); }
+      .hero-subtitle { font-size: 27px; }
+      .hero-grid { gap: 6px; }
+      .hero-visual { min-height: 430px; }
+      .signal-card { width: 220px; bottom: -2%; right: 0; }
+      .manifesto-grid { grid-template-columns: 1fr; }
+      .question-stack { position: static; }
+      .meaning-stage { min-height: 580px; }
+      .system-map { min-height: 470px; }
+      .map-node { width: 82px; height: 82px; font-size: 9px; }
+      .map-node.center { width: 118px; height: 118px; }
+      .character-card, .character-card:nth-child(4), .character-card:nth-child(5) { grid-column: span 12; min-height: 310px; }
+      .timeline-shell::before { left: 91px; }
+      .timeline-item { grid-template-columns: 72px 38px 1fr; }
+      .timeline-year { font-size: 21px; }
+      .act-card { grid-template-columns: 64px 1fr; padding: 25px; gap: 18px; }
+      .act-num { font-size: 48px; }
+      .act-meta { grid-column: 2; }
+      .chapter-grid { grid-template-columns: repeat(2, 1fr); }
+      .chapter-card { min-height: 195px; }
+      .zero-grid { grid-template-columns: 1fr; gap: 30px; padding: 90px 0; }
+      .zero-console { width: min(510px, 100%); justify-self: center; }
+      .zero-start { bottom: 3%; }
+      .version-card { grid-template-columns: 1fr; padding: 27px; }
+      .footer-grid { align-items: start; flex-direction: column; }
+      .footer-meta { text-align: left; }
+    }
+
+    @media (max-width: 520px) {
+      .nav { padding-inline: 14px; }
+      .brand { font-size: 13px; }
+      .nav-tools #soundBtn { display: none; }
+      .hero-actions .btn { width: 100%; }
+      .hero-visual { min-height: 380px; }
+      .signal-card { position: relative; margin: 280px auto 0; right: auto; bottom: auto; }
+      .orbit-stage { position: absolute; top: 0; }
+      .chapter-grid { grid-template-columns: 1fr; }
+      .chapter-card { min-height: 174px; }
+      .chapter-toolbar { align-items: stretch; }
+      .chapter-tools-right, .search-box, .search-box input { width: 100%; }
+      .theme-grid { grid-template-columns: 1fr; }
+      .theme-card, .theme-card:nth-child(2n), .theme-card:last-child { grid-column: span 1; border-right: 0; }
+      .version-stats { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 62px 28px 1fr; }
+      .timeline-shell::before { left: 75px; }
+      .dialog-inner { padding: 24px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .001ms !important; }
+      #cosmos { display: none; }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    @media print {
+      .nav, #cosmos, .scroll-progress, .hero-visual, .archive-ribbon, .chapter-toolbar, .zero-section, .toast { display: none !important; }
+      body { background: white; color: black; }
+      .hero { min-height: auto; padding: 70px 0; }
+      .section { padding: 45px 0; break-inside: avoid; }
+      .chapter-grid { grid-template-columns: repeat(2, 1fr); }
+      .chapter-card, .question, .character-card, .act-card, .version-card { background: white; border-color: #bbb; box-shadow: none; }
+    }
+
+
+    /* ===== V1.0 FINAL MANUSCRIPT COMPANION ===== */
+    main section[id] { scroll-margin-top: calc(var(--nav-h) + 18px); }
+    .skip-link {
+      position: fixed; left: 16px; top: 12px; z-index: 220;
+      transform: translateY(-160%); padding: 9px 13px; border-radius: 999px;
+      background: var(--cyan); color: #06100e; font-size: 12px;
+      text-decoration: none; transition: transform .2s ease;
+    }
+    .skip-link:focus { transform: none; }
+    .menu-btn { display: none; }
+    .nav-drawer { width: min(520px, calc(100% - 24px)); max-height: min(760px, calc(100svh - 24px)); border-radius: 28px; background: var(--panel-solid); }
+    .nav-drawer-inner { padding: 24px; }
+    .nav-drawer-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+    .nav-drawer-head .brand { font-size: 17px; }
+    .nav-drawer-links { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
+    .nav-drawer-links a { min-height: 74px; display: flex; flex-direction: column; justify-content: center; padding: 14px 16px; border: 1px solid var(--line); border-radius: 16px; text-decoration: none; background: var(--panel); transition: .2s ease; }
+    .nav-drawer-links a:hover { border-color: var(--cyan); transform: translateY(-2px); }
+    .nav-drawer-links b { font-family: var(--serif); font-size: 18px; font-weight: 580; }
+    .nav-drawer-links small { margin-top: 4px; color: var(--dim); font: 9px/1.4 var(--mono); letter-spacing: .07em; }
+    .nav-drawer-meta { margin-top: 18px; color: var(--dim); font: 9px/1.7 var(--mono); letter-spacing: .08em; }
+
+    .final-badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border: 1px solid rgba(148,234,219,.28); border-radius: 999px; color: var(--cyan); background: rgba(148,234,219,.055); font: 9px/1 var(--mono); letter-spacing: .1em; }
+    .final-badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 12px var(--cyan); }
+
+    .manuscript-stats { padding: 26px 0 0; }
+    .manuscript-stat-grid { display: grid; grid-template-columns: 1.3fr repeat(4, 1fr); overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: var(--panel); }
+    .manuscript-stat { min-height: 150px; padding: 24px; border-right: 1px solid var(--line); position: relative; overflow: hidden; }
+    .manuscript-stat:last-child { border-right: 0; }
+    .manuscript-stat::after { content: attr(data-ghost); position: absolute; right: -6px; bottom: -24px; color: transparent; -webkit-text-stroke: 1px var(--line); font: 700 90px/1 var(--mono); opacity: .75; }
+    .manuscript-stat small { display: block; color: var(--dim); font: 9px/1.5 var(--mono); letter-spacing: .1em; }
+    .manuscript-stat b { display: block; margin-top: 27px; font: 600 clamp(27px, 3vw, 42px)/1 var(--mono); letter-spacing: -.06em; }
+    .manuscript-stat:first-child b { color: var(--cyan); }
+    .manuscript-stat span { display: block; margin-top: 10px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+
+    .reading-shell { display: grid; grid-template-columns: minmax(250px, .38fr) minmax(0, 1fr); min-height: 650px; overflow: hidden; border: 1px solid var(--line); border-radius: 28px; background: var(--panel); box-shadow: var(--shadow); }
+    .excerpt-nav { padding: 22px; border-right: 1px solid var(--line); background: color-mix(in srgb, var(--bg-soft) 66%, transparent); }
+    .excerpt-nav-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; color: var(--dim); font: 9px/1 var(--mono); letter-spacing: .1em; }
+    .excerpt-tab { width: 100%; display: grid; grid-template-columns: 42px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 14px 10px; border: 0; border-bottom: 1px solid var(--line); background: transparent; text-align: left; cursor: pointer; color: var(--muted); transition: .2s ease; }
+    .excerpt-tab:hover, .excerpt-tab.active { color: var(--ink); background: rgba(148,234,219,.045); padding-left: 14px; }
+    .excerpt-tab.active { box-shadow: inset 2px 0 var(--cyan); }
+    .excerpt-tab .excerpt-no { color: var(--cyan); font: 10px/1 var(--mono); }
+    .excerpt-tab b { display: block; font-family: var(--serif); font-size: 16px; font-weight: 560; }
+    .excerpt-tab small { display: block; margin-top: 3px; color: var(--dim); font-size: 9px; }
+    .excerpt-tab .lock { color: var(--red); font-size: 10px; }
+    .excerpt-reader { min-width: 0; padding: clamp(30px, 5vw, 66px); position: relative; background: linear-gradient(120deg, rgba(148,234,219,.035), transparent 30%), radial-gradient(circle at 86% 12%, rgba(239,199,127,.055), transparent 24rem); }
+    .excerpt-reader::after { content: attr(data-chapter); position: absolute; right: 3%; top: 2%; color: transparent; -webkit-text-stroke: 1px var(--line); font: 700 clamp(120px, 19vw, 250px)/1 var(--mono); letter-spacing: -.12em; pointer-events: none; opacity: .6; }
+    .excerpt-reader-head { position: relative; z-index: 1; max-width: 760px; }
+    .excerpt-source { color: var(--cyan); font: 9px/1.6 var(--mono); letter-spacing: .12em; }
+    .excerpt-reader h3 { margin: 20px 0 8px; font-family: var(--serif); font-size: clamp(38px, 6vw, 74px); font-weight: 590; line-height: 1.05; }
+    .excerpt-scene { color: var(--gold); font-size: 12px; letter-spacing: .08em; }
+    .excerpt-body { position: relative; z-index: 1; max-width: 780px; margin-top: 36px; font-family: var(--serif); font-size: calc(20px * var(--reading-scale)); line-height: 2; letter-spacing: .015em; }
+    .excerpt-body p { margin: 0 0 1.15em; }
+    .excerpt-body p:first-child::first-letter { float: left; margin: .08em .12em 0 0; color: var(--cyan); font-size: 3.1em; line-height: .82; }
+    .excerpt-note { position: relative; z-index: 1; max-width: 780px; margin-top: 30px; padding: 18px 20px; border-left: 2px solid var(--gold); background: rgba(239,199,127,.045); color: var(--muted); font-size: calc(12px * var(--reading-scale)); line-height: 1.8; }
+    .reader-controls { position: relative; z-index: 1; max-width: 780px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--line); }
+    .reader-controls .pager { display: flex; gap: 8px; }
+    .reader-status { color: var(--dim); font: 9px/1.5 var(--mono); letter-spacing: .08em; }
+
+    .character-card, .character-card:nth-child(4), .character-card:nth-child(5) { grid-column: span 4; min-height: 330px; }
+    .character-card.featured { grid-column: span 6; min-height: 360px; }
+    .character-card.wide-support { grid-column: span 6; }
+    .character-card.source-card { grid-column: span 12; min-height: 250px; }
+    .character-card.source-card h3 { margin-top: 34px; }
+    .character-card.source-card p { max-width: 850px; }
+    .character-card.support h3 { margin-top: 40px; font-size: 35px; }
+    .character-card.support .character-role { color: var(--blue); }
+
+    .evidence-shell { display: grid; grid-template-columns: minmax(260px, .42fr) minmax(0, 1fr); overflow: hidden; border: 1px solid var(--line); border-radius: 28px; background: var(--panel); }
+    .evidence-index { border-right: 1px solid var(--line); padding: 18px; }
+    .evidence-tab { width: 100%; display: grid; grid-template-columns: 48px minmax(0,1fr); gap: 12px; padding: 16px 12px; border: 0; border-bottom: 1px solid var(--line); background: transparent; text-align: left; cursor: pointer; color: var(--muted); transition: .2s ease; }
+    .evidence-tab:hover, .evidence-tab.active { color: var(--ink); background: rgba(130,170,255,.045); }
+    .evidence-tab.active { box-shadow: inset 2px 0 var(--blue); }
+    .evidence-tab .case-no { color: var(--blue); font: 10px/1 var(--mono); }
+    .evidence-tab b { display: block; font-family: var(--serif); font-size: 17px; font-weight: 560; }
+    .evidence-tab small { display: block; margin-top: 4px; color: var(--dim); font-size: 9px; }
+    .evidence-view { padding: clamp(28px, 5vw, 58px); min-height: 560px; position: relative; overflow: hidden; }
+    .evidence-view::before { content: "EVIDENCE"; position: absolute; right: -42px; bottom: 10px; color: transparent; -webkit-text-stroke: 1px var(--line); font: 700 clamp(70px, 10vw, 132px)/1 var(--mono); letter-spacing: -.08em; transform: rotate(-90deg) translateX(40%); opacity: .6; }
+    .evidence-code { color: var(--blue); font: 9px/1.5 var(--mono); letter-spacing: .12em; }
+    .evidence-view h3 { margin: 18px 0 8px; font-family: var(--serif); font-size: clamp(34px, 5vw, 60px); font-weight: 590; }
+    .evidence-sub { color: var(--gold); font-size: 12px; letter-spacing: .08em; }
+    .evidence-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 30px 0; }
+    .evidence-fact { padding: 17px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.018); }
+    .evidence-fact small { display: block; color: var(--dim); font: 9px/1 var(--mono); letter-spacing: .08em; }
+    .evidence-fact p { margin: 9px 0 0; color: var(--muted); font-size: calc(13px * var(--reading-scale)); line-height: 1.8; }
+    .evidence-quote { max-width: 760px; margin: 26px 0 0; padding: 20px 22px; border-left: 2px solid var(--cyan); font-family: var(--serif); font-size: calc(20px * var(--reading-scale)); line-height: 1.7; }
+    .evidence-principle { max-width: 760px; margin-top: 24px; color: var(--muted); font-size: calc(13px * var(--reading-scale)); line-height: 1.9; }
+    .source-grade { display: flex; align-items: center; gap: 8px; margin-top: 26px; color: var(--dim); font: 9px/1 var(--mono); }
+    .source-grade i { width: 26px; height: 2px; background: var(--line); }
+    .source-grade i.on { background: var(--blue); }
+
+    .decision-section { padding: 120px 0; border-block: 1px solid var(--line); background: radial-gradient(circle at 17% 35%, rgba(148,234,219,.07), transparent 28rem), radial-gradient(circle at 83% 35%, rgba(228,119,111,.07), transparent 28rem), var(--bg-soft); }
+    .decision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .plan-card { position: relative; min-height: 520px; display: flex; flex-direction: column; padding: 30px; border: 1px solid var(--line); border-radius: 26px; background: var(--panel); overflow: hidden; transition: .3s ease; }
+    .plan-card::before { content: attr(data-symbol); position: absolute; right: -8px; top: -40px; color: transparent; -webkit-text-stroke: 1px var(--line-strong); font: 700 190px/1 var(--serif); opacity: .45; }
+    .plan-card.selected { transform: translateY(-6px); box-shadow: var(--shadow); }
+    .plan-card[data-plan="field"].selected { border-color: var(--cyan); }
+    .plan-card[data-plan="zero"].selected { border-color: var(--red); }
+    .plan-kicker { color: var(--dim); font: 9px/1 var(--mono); letter-spacing: .1em; }
+    .plan-card h3 { margin: 54px 0 8px; font-family: var(--serif); font-size: clamp(35px, 5vw, 58px); font-weight: 590; }
+    .plan-card[data-plan="field"] h3 { color: var(--cyan); }
+    .plan-card[data-plan="zero"] h3 { color: var(--red); }
+    .plan-card > p { margin: 0; color: var(--muted); line-height: 1.85; }
+    .plan-ledgers { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 28px 0; }
+    .plan-ledger { padding: 16px; border: 1px solid var(--line); border-radius: 15px; }
+    .plan-ledger b { display: block; color: var(--gold); font: 9px/1 var(--mono); letter-spacing: .08em; }
+    .plan-ledger ul { margin: 12px 0 0; padding-left: 18px; color: var(--muted); font-size: 12px; line-height: 1.8; }
+    .plan-card .plan-select { margin-top: auto; align-self: flex-start; }
+    .decision-ledger { grid-column: 1 / -1; position: relative; min-height: 260px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 30px; align-items: center; padding: 34px; border: 1px solid var(--line-strong); border-radius: 26px; background: var(--panel-solid); overflow: hidden; }
+    .decision-ledger h3 { margin: 8px 0 10px; font-family: var(--serif); font-size: clamp(30px, 4vw, 48px); }
+    .decision-ledger p { max-width: 760px; margin: 0; color: var(--muted); font-size: calc(13px * var(--reading-scale)); line-height: 1.9; }
+    .decision-debt { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .decision-debt span { padding: 7px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--dim); font: 9px/1 var(--mono); }
+    .no-innocence { width: 145px; aspect-ratio: 1; display: grid; place-items: center; border: 2px solid var(--red); border-radius: 50%; color: var(--red); text-align: center; font: 700 13px/1.45 var(--mono); letter-spacing: .08em; transform: rotate(-8deg); box-shadow: inset 0 0 30px rgba(228,119,111,.07); }
+    .decision-disclaimer { margin-top: 16px; color: var(--dim); font-size: 10px; line-height: 1.7; }
+
+    .charter-layout { display: grid; grid-template-columns: minmax(250px, .42fr) minmax(0, 1fr); gap: 18px; align-items: stretch; }
+    .charter-index { padding: 18px; border: 1px solid var(--line); border-radius: 24px; background: var(--panel); }
+    .charter-rule { width: 100%; display: grid; grid-template-columns: 36px minmax(0,1fr); gap: 11px; padding: 15px 10px; border: 0; border-bottom: 1px solid var(--line); background: transparent; text-align: left; color: var(--muted); cursor: pointer; transition: .2s ease; }
+    .charter-rule:hover, .charter-rule.active { color: var(--ink); background: rgba(148,234,219,.04); }
+    .charter-rule.active { box-shadow: inset 2px 0 var(--cyan); }
+    .charter-rule .rule-no { color: var(--cyan); font: 10px/1 var(--mono); }
+    .charter-rule b { display: block; font-family: var(--serif); font-size: 16px; font-weight: 560; }
+    .charter-rule small { display: block; margin-top: 4px; color: var(--dim); font-size: 9px; }
+    .charter-detail { min-height: 570px; padding: clamp(30px, 5vw, 58px); border: 1px solid var(--line); border-radius: 24px; background: var(--panel); position: relative; overflow: hidden; }
+    .charter-detail::after { content: "LOCAL HE"; position: absolute; right: -22px; bottom: -18px; color: transparent; -webkit-text-stroke: 1px var(--line); font: 700 clamp(65px, 10vw, 130px)/1 var(--mono); opacity: .6; }
+    .charter-code { color: var(--cyan); font: 9px/1 var(--mono); letter-spacing: .12em; }
+    .charter-detail h3 { margin: 18px 0 10px; font-family: var(--serif); font-size: clamp(36px, 5vw, 62px); font-weight: 590; }
+    .charter-detail > p { max-width: 760px; color: var(--muted); font-size: calc(14px * var(--reading-scale)); line-height: 1.95; }
+    .patch-chain { display: grid; gap: 10px; margin-top: 30px; max-width: 780px; }
+    .patch-node { display: grid; grid-template-columns: 130px minmax(0,1fr); gap: 18px; padding: 17px; border: 1px solid var(--line); border-radius: 15px; }
+    .patch-node b { color: var(--gold); font: 9px/1.6 var(--mono); letter-spacing: .06em; }
+    .patch-node span { color: var(--muted); font-size: 12px; line-height: 1.8; }
+    .charter-warning { max-width: 760px; margin-top: 24px; padding: 17px 20px; border-left: 2px solid var(--red); background: rgba(228,119,111,.04); color: var(--muted); font-size: 12px; line-height: 1.8; }
+
+    .chapter-progress { display: inline-flex; align-items: center; gap: 8px; color: var(--dim); font: 9px/1 var(--mono); letter-spacing: .08em; }
+    .chapter-progress i { width: 68px; height: 2px; background: var(--line); overflow: hidden; }
+    .chapter-progress i::after { content: ""; display: block; width: var(--read-progress, 0%); height: 100%; background: var(--cyan); transition: width .3s ease; }
+    .chapter-card.is-read { border-color: rgba(148,234,219,.28); }
+    .chapter-card.is-read::after { content: "READ"; position: absolute; right: 18px; bottom: 16px; color: var(--cyan); font: 8px/1 var(--mono); letter-spacing: .12em; }
+    .chapter-read-chip { color: var(--cyan); }
+    .dialog-excerpt { display: none; margin-top: 25px; padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: rgba(148,234,219,.035); font-family: var(--serif); font-size: calc(17px * var(--reading-scale)); line-height: 1.9; }
+    .dialog-excerpt.show { display: block; }
+    .dialog-excerpt small { display: block; margin-bottom: 12px; color: var(--cyan); font: 9px/1 var(--mono); letter-spacing: .1em; }
+    .dialog-actions { display: none; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+    .dialog-actions.show { display: flex; }
+    .dialog-actions .btn { min-height: 38px; padding: 0 14px; font-size: 11px; }
+
+    .edition-notes { display: grid; gap: 12px; margin-top: 28px; }
+    .edition-note { display: grid; grid-template-columns: 120px minmax(0,1fr); gap: 18px; padding: 14px 0; border-top: 1px solid var(--line); }
+    .edition-note b { color: var(--cyan); font: 9px/1.5 var(--mono); letter-spacing: .08em; }
+    .edition-note span { color: var(--muted); font-size: 12px; line-height: 1.8; }
+
+    @media (max-width: 1080px) {
+      .menu-btn { display: grid; }
+      .manuscript-stat-grid { grid-template-columns: repeat(3, 1fr); }
+      .manuscript-stat:nth-child(3) { border-right: 0; }
+      .manuscript-stat:nth-child(n+4) { border-top: 1px solid var(--line); }
+      .manuscript-stat:nth-child(4) { grid-column: span 1; }
+      .manuscript-stat:nth-child(5) { grid-column: span 2; border-right: 0; }
+      .character-card.featured, .character-card.support, .character-card.wide-support { grid-column: span 6; }
+      .evidence-facts { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 780px) {
+      .manuscript-stat-grid { grid-template-columns: 1fr 1fr; }
+      .manuscript-stat, .manuscript-stat:nth-child(3), .manuscript-stat:nth-child(4) { border-right: 1px solid var(--line); border-top: 1px solid var(--line); }
+      .manuscript-stat:nth-child(1), .manuscript-stat:nth-child(2) { border-top: 0; }
+      .manuscript-stat:nth-child(2n) { border-right: 0; }
+      .manuscript-stat:nth-child(5) { grid-column: span 2; border-right: 0; }
+      .reading-shell, .evidence-shell, .charter-layout { grid-template-columns: 1fr; }
+      .excerpt-nav, .evidence-index { border-right: 0; border-bottom: 1px solid var(--line); }
+      .excerpt-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 0 8px; }
+      .excerpt-nav-head { grid-column: 1 / -1; }
+      .excerpt-tab { grid-template-columns: 32px minmax(0,1fr); }
+      .excerpt-tab .lock { display: none; }
+      .excerpt-reader { min-height: 560px; }
+      .character-card, .character-card:nth-child(4), .character-card:nth-child(5), .character-card.featured, .character-card.support, .character-card.wide-support, .character-card.source-card { grid-column: span 12; min-height: 300px; }
+      .decision-grid { grid-template-columns: 1fr; }
+      .decision-ledger { grid-column: 1; grid-template-columns: 1fr; }
+      .no-innocence { width: 118px; }
+      .patch-node { grid-template-columns: 1fr; gap: 6px; }
+      .edition-note { grid-template-columns: 1fr; gap: 5px; }
+    }
+    @media (max-width: 520px) {
+      .nav-tools #soundBtn { display: none; }
+      .nav-drawer-links { grid-template-columns: 1fr 1fr; }
+      .manuscript-stat { min-height: 125px; padding: 18px; }
+      .excerpt-nav { grid-template-columns: 1fr; }
+      .excerpt-reader { padding: 26px 22px; }
+      .excerpt-body { font-size: calc(18px * var(--reading-scale)); }
+      .reader-controls { align-items: stretch; }
+      .reader-controls .pager { width: 100%; }
+      .reader-controls .pager .btn { flex: 1; }
+      .plan-ledgers { grid-template-columns: 1fr; }
+      .decision-ledger { padding: 24px; }
+      .evidence-view, .charter-detail { padding: 27px 22px; }
+    }
+    @media print {
+      .excerpt-nav, .evidence-index, .charter-index, .reader-controls, .plan-select, .dialog-actions, .nav-drawer { display: none !important; }
+      .reading-shell, .evidence-shell, .charter-layout { display: block; border: 0; box-shadow: none; }
+      .excerpt-reader, .evidence-view, .charter-detail, .plan-card, .decision-ledger, .manuscript-stat { background: white; color: black; box-shadow: none; }
+      .decision-grid { display: block; }
+      .plan-card, .decision-ledger { margin-bottom: 18px; break-inside: avoid; }
+    }
+
+
+    /* ===== V1.2 READER-FIRST UX ===== */
+
+    .evidence-tab.locked { color: var(--dim); }
+    .evidence-tab .case-lock { margin-left: auto; color: var(--red); font-size: 8px; }
+    .evidence-view.locked { display: flex; flex-direction: column; justify-content: center; }
+    .evidence-view.locked .evidence-principle { border-top: 1px solid var(--line); }
+    .evidence-unlock { margin-top: 14px; }
+
+    :focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .icon-btn { width: 42px; height: 42px; }
+    .hero-hook {
+      max-width: 720px;
+      margin: 26px 0 8px;
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: clamp(22px, 2.45vw, 34px);
+      line-height: 1.5;
+      letter-spacing: .01em;
+    }
+    .hero-description { margin-bottom: 26px; }
+    .scope-note {
+      display: grid;
+      grid-template-columns: max-content minmax(0, 1fr);
+      gap: 12px;
+      max-width: 720px;
+      margin-top: 22px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: color-mix(in srgb, var(--panel-solid) 66%, transparent);
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.75;
+    }
+    .scope-note b { color: var(--gold); font: 700 10px/1.75 var(--mono); letter-spacing: .08em; }
+
+    .entry-routes { padding: 70px 0 18px; scroll-margin-top: calc(var(--nav-h) + 18px); }
+    .entry-head { display: grid; grid-template-columns: minmax(0,1fr) minmax(300px,.62fr); gap: 44px; align-items: end; margin-bottom: 26px; }
+    .entry-head h2 { font-size: clamp(34px, 4.5vw, 58px); }
+    .entry-head > p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.9; }
+    .entry-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+    .route-card {
+      min-width: 0;
+      min-height: 190px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--panel);
+      color: var(--ink);
+      text-align: left;
+      text-decoration: none;
+      cursor: pointer;
+      transition: .24s ease;
+    }
+    .route-button { width: 100%; font: inherit; }
+    .route-card:hover { transform: translateY(-4px); border-color: var(--line-strong); box-shadow: 0 20px 48px rgba(0,0,0,.14); }
+    .route-index { color: var(--cyan); font: 10px/1 var(--mono); letter-spacing: .1em; }
+    .route-card b { margin-top: 27px; color: var(--muted); font-size: 12px; font-weight: 500; }
+    .route-card strong { margin-top: 5px; font-family: var(--serif); font-size: 25px; font-weight: 600; }
+    .route-card small { margin-top: auto; padding-top: 18px; color: var(--dim); font-size: 10px; line-height: 1.6; }
+
+    .spoiler-details { margin-top: 26px; border: 1px solid var(--line); border-radius: 18px; background: var(--panel); overflow: hidden; }
+    .spoiler-details summary { padding: 16px 19px; cursor: pointer; color: var(--gold); font: 650 12px/1.6 var(--sans); list-style: none; }
+    .spoiler-details summary::-webkit-details-marker { display: none; }
+    .spoiler-details summary::after { content: "+"; float: right; font-size: 18px; }
+    .spoiler-details[open] summary::after { content: "−"; }
+    .spoiler-details > div { padding: 0 20px 20px; color: var(--muted); font-family: var(--sans); font-size: 14px; line-height: 1.9; }
+    .spoiler-details p:last-child { margin-bottom: 0; }
+
+    .excerpt-note::before { content: "为什么选这段"; display: block; margin-bottom: 8px; color: var(--gold); font: 700 9px/1 var(--mono); letter-spacing: .1em; }
+    .mobile-expand { display: none; margin: 18px auto 0; }
+
+    .spoiler-zone { position: relative; }
+    .spoiler-gate { display: none; }
+    body:not(.spoilers-on) .spoiler-zone {
+      max-height: 540px;
+      overflow: hidden;
+      min-height: 420px;
+    }
+    body:not(.spoilers-on) .spoiler-zone > :not(.spoiler-gate) {
+      filter: blur(13px);
+      opacity: .14;
+      pointer-events: none;
+      user-select: none;
+    }
+    body:not(.spoilers-on) .spoiler-zone .spoiler-gate {
+      position: absolute;
+      inset: 0;
+      z-index: 8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 34px 22px;
+      text-align: center;
+      background: radial-gradient(circle at center, color-mix(in srgb, var(--bg) 80%, transparent), color-mix(in srgb, var(--bg) 97%, transparent) 67%);
+    }
+    .spoiler-gate > span { color: var(--red); font: 700 10px/1 var(--mono); letter-spacing: .12em; }
+    .spoiler-gate h3 { max-width: 660px; margin: 18px 0 10px; font-family: var(--serif); font-size: clamp(30px, 5vw, 54px); line-height: 1.2; }
+    .spoiler-gate p { max-width: 620px; margin: 0 0 24px; color: var(--muted); font-size: 14px; line-height: 1.85; }
+
+    .mobile-dock { display: none; }
+    .chapter-card { position: relative; }
+
+    @media (max-width: 1080px) {
+      .entry-grid { grid-template-columns: 1fr 1fr; }
+      .route-card:last-child { grid-column: 1 / -1; min-height: 150px; }
+    }
+
+    @media (max-width: 780px) {
+      body { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
+      body::after { opacity: .022; }
+      #cosmos { opacity: .42; }
+      .nav { padding-inline: 14px; }
+      .nav-tools { gap: 5px; }
+      .icon-btn { width: 44px; height: 44px; }
+      .hero { min-height: auto; padding-top: 92px; padding-bottom: 34px; }
+      .hero-copy { padding-top: 6px; }
+      .hero-kicker { font-size: 9px; }
+      .hero-title { margin-top: 30px; }
+      .hero-hook { margin-top: 22px; font-size: 23px; line-height: 1.55; }
+      .hero-description { font-size: calc(16px * var(--reading-scale)); line-height: 1.86; }
+      .scope-note { grid-template-columns: 1fr; gap: 5px; font-size: 12px; }
+      .hero-visual { min-height: 360px; margin-top: -12px; }
+      .manuscript-stats { padding-top: 14px; }
+      .entry-routes { padding-top: 62px; }
+      .entry-head { grid-template-columns: 1fr; gap: 12px; }
+      .entry-head > p { font-size: 14px; }
+      .entry-grid { grid-template-columns: 1fr; }
+      .route-card, .route-card:last-child { grid-column: auto; min-height: 128px; padding: 20px; }
+      .route-card b { margin-top: 16px; }
+      .route-card small { padding-top: 12px; }
+      .section { padding: 76px 0; }
+      h2 { font-size: clamp(36px, 12vw, 54px); }
+      .lead { font-size: calc(16px * var(--reading-scale)); line-height: 1.85; }
+      .story-copy { font-size: calc(21px * var(--reading-scale)); line-height: 1.78; }
+      .question p { font-size: 16px; }
+      .mobile-dock {
+        position: fixed;
+        left: 10px;
+        right: 10px;
+        bottom: max(8px, env(safe-area-inset-bottom));
+        z-index: 118;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 6px;
+        border: 1px solid var(--line-strong);
+        border-radius: 18px;
+        background: color-mix(in srgb, var(--panel-solid) 92%, transparent);
+        box-shadow: 0 18px 55px rgba(0,0,0,.34);
+        backdrop-filter: blur(18px) saturate(130%);
+      }
+      .mobile-dock a, .mobile-dock button {
+        min-height: 46px;
+        display: grid;
+        place-items: center;
+        padding: 0 4px;
+        border: 0;
+        border-radius: 13px;
+        background: transparent;
+        color: var(--muted);
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 650;
+      }
+      .mobile-dock a:active, .mobile-dock button:active { background: rgba(148,234,219,.08); color: var(--ink); }
+      .nav-drawer-links a { min-height: 70px; }
+      body:not(.spoilers-on) .spoiler-zone { max-height: 470px; min-height: 390px; }
+    }
+
+    @media (max-width: 520px) {
+      .archive-ribbon { display: none; }
+      .final-badge { font-size: 8px; }
+      .hero-subtitle { margin-bottom: 22px; }
+      .hero-actions .btn { min-height: 50px; }
+      .hero-meta { gap: 9px 15px; font-size: 10px; }
+      .hero-visual { min-height: 335px; }
+      .signal-card { width: calc(100% - 24px); max-width: 250px; margin-top: 238px; }
+      .manuscript-stat b { font-size: 25px; }
+      .manuscript-stat span { font-size: 11px; }
+      .eyebrow { font-size: 10px; }
+      .micro, .reader-status, .plan-kicker, .chapter-top, .dialog-kicker, .excerpt-source, .charter-code, .evidence-code { font-size: 10px; }
+      .entry-head h2 { font-size: 38px; }
+      .route-card strong { font-size: 23px; }
+
+      .excerpt-nav {
+        display: flex !important;
+        gap: 8px;
+        overflow-x: auto;
+        padding: 12px;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+      }
+      .excerpt-nav::-webkit-scrollbar, .evidence-index::-webkit-scrollbar, .charter-index::-webkit-scrollbar { display: none; }
+      .excerpt-nav-head { display: none; }
+      .excerpt-tab {
+        flex: 0 0 min(210px, 76vw);
+        grid-template-columns: 32px minmax(0,1fr);
+        padding: 13px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        scroll-snap-align: start;
+      }
+      .excerpt-tab:hover, .excerpt-tab.active { padding-left: 13px; }
+      .excerpt-tab .lock { display: none; }
+      .excerpt-reader { min-height: auto; padding: 28px 20px; }
+      .excerpt-reader h3 { font-size: 42px; }
+      .excerpt-body { font-size: calc(18px * var(--reading-scale)); line-height: 1.9; }
+      .excerpt-note { font-size: calc(13px * var(--reading-scale)); }
+
+      .evidence-index, .charter-index {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding: 12px;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+      }
+      .evidence-tab, .charter-rule {
+        flex: 0 0 min(220px, 78vw);
+        min-height: 78px;
+        padding: 13px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        scroll-snap-align: start;
+      }
+      .evidence-tab.active, .charter-rule.active { box-shadow: inset 0 2px var(--cyan); }
+      .evidence-view, .charter-detail { min-height: auto; }
+
+      .chapter-card { min-height: 132px; padding: 16px; }
+      .chapter-card h3 { margin: 14px 0 5px; font-size: 21px; }
+      .chapter-teaser { display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; font-size: calc(13px * var(--reading-scale)); }
+      .chapter-open { padding-top: 11px; }
+      .chapter-top span:last-child { display: none; }
+      .chapter-grid.mobile-collapsed .chapter-card:nth-child(n+9) { display: none; }
+      .character-grid.mobile-collapsed .character-card:nth-child(n+5) { display: none; }
+      .mobile-expand { display: flex; width: min(100%, 360px); }
+      .character-card, .character-card:nth-child(4), .character-card:nth-child(5), .character-card.featured, .character-card.support, .character-card.wide-support, .character-card.source-card { min-height: 260px; }
+      .character-card p { font-size: calc(13px * var(--reading-scale)); line-height: 1.8; }
+      .nav-drawer-links { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .nav-drawer-links b { font-size: 16px; }
+      .nav-drawer-links small { font-size: 9px; }
+      .spoiler-gate h3 { font-size: 34px; }
+      .spoiler-gate p { font-size: 13px; }
+      .dialog-summary { font-size: calc(18px * var(--reading-scale)); }
+    }
+
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#reading">跳至精选试读</a>
+  <canvas id="cosmos" aria-hidden="true"></canvas>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <nav class="nav" aria-label="主要导航">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>心元</span>
+    </a>
+    <div class="nav-links">
+      <a href="#story">简介</a>
+      <a href="#reading">试读</a>
+      <a href="#chapters">目录</a>
+      <a href="#characters">人物</a>
+      <a href="#world">世界</a>
+      <a href="#timeline">时间线</a>
+      <a href="#decision">读后档案</a>
+      <a href="#version">关于</a>
+    </div>
+    <div class="nav-tools">
+      <button type="button" class="icon-btn menu-btn" id="menuBtn" aria-label="打开页面导航" title="打开页面导航" aria-expanded="false" aria-controls="navDialog">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <button type="button" class="icon-btn" id="fontBtn" aria-label="调整正文字号" title="调整正文字号">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19 9.6 5h1.8L17 19M6.2 14h8.6M17 8h3M18.5 6.5v3"/></svg>
+      </button>
+      <button type="button" class="icon-btn" id="soundBtn" aria-label="开启环境声" title="开启环境声">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M16 9.5c1.4 1.4 1.4 3.6 0 5M18.5 7c2.8 2.8 2.8 7.2 0 10"/></svg>
+      </button>
+      <button type="button" class="icon-btn" id="themeBtn" aria-label="切换阅读主题" title="切换阅读主题">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <dialog class="nav-drawer" id="navDialog" aria-label="页面导航">
+    <div class="nav-drawer-inner">
+      <div class="nav-drawer-head">
+        <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span><span>心元 · 作品页</span></a>
+        <button type="button" class="dialog-close" id="navClose" aria-label="关闭导航">×</button>
+      </div>
+      <nav class="nav-drawer-links" aria-label="移动端页面导航">
+        <a href="#reading"><b>开始试读</b><small>从第一章进入</small></a>
+        <a href="#chapters"><b>32 章目录</b><small>按三部浏览</small></a>
+        <a href="#story"><b>无剧透简介</b><small>故事与核心问题</small></a>
+        <a href="#characters"><b>主要人物</b><small>角色关系与选择</small></a>
+        <a href="#world"><b>世界观</b><small>HE、白时与寿时</small></a>
+        <a href="#timeline"><b>时间线</b><small>2024—2141</small></a>
+        <a href="#decision"><b>读后档案</b><small>含结局与最终抉择</small></a>
+        <a href="#version"><b>页面说明</b><small>内容范围与版本</small></a>
+      </nav>
+      <div class="nav-drawer-meta">精选正文 · 32 章目录 · 手机与电脑内容一致</div>
+    </div>
+  </dialog>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal visible">
+          <div class="hero-kicker"><i class="status-dot"></i> 已完结长篇 · 32 章 · 约 12 万字</div>
+          <h1 class="hero-title" id="hero-title">心<span class="outline">元</span></h1>
+          <div class="hero-subtitle">零时之后</div>
+          <div class="final-badge">官方作品页 · 精选试读</div>
+          <p class="hero-hook">八千六百万人，在四十七秒内失去了思想的边界。</p>
+          <p class="hero-description">
+            文明记录审校员元一追查这段共同记忆，发现一份写于 2024 年的手写笔记，正藏在全球意识系统的底层。太阳风暴逼近，人类必须在“更安全地活着”与“仍有能力说不”之间作出选择。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#reading">
+              从第一章开始试读
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn" href="#chapters">查看 32 章目录</a>
+          </div>
+          <div class="hero-meta">
+            <span>作者 xnan</span>
+            <span>长篇思想科幻</span>
+            <span>32 章 · 三部完结</span>
+            <span>约 12 万字</span>
+          </div>
+          <div class="scope-note"><b>阅读范围</b><span>这是作品介绍与精选试读页：包含 7 段正文、32 章目录、人物与世界观档案。完整连续阅读请使用正式书稿；手机与电脑内容一致。</span></div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbit-stage" id="orbitStage">
+            <div class="halo"></div>
+            <div class="orbit o1"></div>
+            <div class="orbit o2"></div>
+            <div class="orbit o3"></div>
+            <div class="void-ring"></div>
+            <i class="orbit-node n1"></i><i class="orbit-node n2"></i><i class="orbit-node n3"></i>
+            <span class="orbit-label l1">HEART ELEMENT</span>
+            <span class="orbit-label l2">MEANING / 01</span>
+            <span class="orbit-label l3">LUNAR ROOT</span>
+            <div class="signal-card">
+              <div class="signal-head"><span>共声事件 / LIVE ARCHIVE</span><span class="signal-live">● 异常</span></div>
+              <div class="signal-main">
+                <div><strong>86,000,000</strong><span>意识边界同时失效</span></div>
+                <div><strong>47s</strong><span>持续时间</span></div>
+              </div>
+              <div class="signal-wave" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="archive-ribbon" aria-hidden="true">
+      <div class="ribbon-track">
+        <span>一即零，零即一</span><span>文明记录册</span><span>十九天倒计时</span><span>月球救赎</span><span>八十三秒离线</span><span>被出售的时间</span><span>拒绝权</span><span>一个人的种子</span>
+        <span>一即零，零即一</span><span>文明记录册</span><span>十九天倒计时</span><span>月球救赎</span><span>八十三秒离线</span><span>被出售的时间</span><span>拒绝权</span><span>一个人的种子</span>
+      </div>
+    </div>
+
+    <section class="manuscript-stats" aria-label="出版终稿统计">
+      <div class="wrap">
+        <div class="manuscript-stat-grid reveal">
+          <article class="manuscript-stat" data-ghost="32"><small>完整故事</small><b>32 章</b><span>三部结构，主线与主要人物命运均已闭合</span></article>
+          <article class="manuscript-stat" data-ghost="120K"><small>阅读体量</small><b>约 12 万字</b><span>适合连续阅读，也可按章节与主题进入</span></article>
+          <article class="manuscript-stat" data-ghost="47"><small>故事起点</small><b>47 秒</b><span>八千六百万人共同失去思想边界</span></article>
+          <article class="manuscript-stat" data-ghost="83"><small>最终窗口</small><b>83 秒</b><span>所有安全、自由与责任被压缩为一次行动</span></article>
+          <article class="manuscript-stat" data-ghost="0"><small>默认模式</small><b>无剧透</b><span>结局档案默认锁定，读完后再开启</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="entry-routes" aria-labelledby="entry-title">
+      <div class="wrap">
+        <div class="entry-head reveal">
+          <div><p class="eyebrow">Choose your entry</p><h2 id="entry-title">从哪里进入《心元》？</h2></div>
+          <p>第一次来，先读开篇；准备正式阅读，先看目录；已经读完，再打开人物命运与零时后的完整档案。</p>
+        </div>
+        <div class="entry-grid reveal">
+          <a class="route-card" href="#reading"><span class="route-index">01</span><b>第一次进入</b><strong>先读开篇</strong><small>无剧透 · 约 3 分钟</small></a>
+          <a class="route-card" href="#chapters"><span class="route-index">02</span><b>准备阅读全书</b><strong>查看 32 章目录</strong><small>按三部、人物与概念检索</small></a>
+          <button class="route-card route-button global-spoiler-control" id="globalSpoilerButton" type="button" aria-pressed="false"><span class="route-index">03</span><b>已经读完</b><strong class="spoiler-action-text">开启完整档案</strong><small>人物命运、最终抉择与战后制度</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="story">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Story / 无剧透简介</p>
+            <h2>当系统开始<br>替人解释自己</h2>
+          </div>
+          <p class="lead">这不是一个“AI 失控毁灭世界”的故事。真正危险的是：系统确实能救人，却也开始决定哪些欲望应该被保留、哪些拒绝可以被提前消除。</p>
+        </div>
+
+        <div class="manifesto-grid">
+          <article class="story-copy reveal">
+            <p class="drop">2140 年 9 月 3 日，八千六百万人在四十七秒内同时感受到陌生人的恐惧、疼痛、欲望与记忆。所有人都看见一个没有闭合的黑环，并听见同一句话：“一即零，零即一。”</p>
+            <p>元一负责判断这些意识证据是否真实。他在离线纸本库中找到一份写于 2024 年的手写笔记《心孔·宇宙》，也发现自己的近八年记忆并不完全属于自己——它需要中央 HE 持续授权，才能被他体验成“我经历过”。</p>
+            <p>与此同时，太阳风暴正在逼近。月球上的救援计划可以保护医院、交通与身份系统，也可能让一种临时的安全机制永久留下。元一必须先回答：当一个世界不再产生反对，它究竟更文明了，还是失去了修正自己的能力？</p>
+            <details class="spoiler-details"><summary>展开含结局的完整故事梗概</summary><div><p>调查把元一带向八年前死亡的 HE 架构师凌、被出售的“白时”、以清醒生命计价的“寿时”，以及顾衡设计的永久一致场。顾衡的方案并非骗局：它真实降低死亡与暴力，却会让退出愿望本身越来越难形成。</p><p>故事最终把所有争论压缩为八十三秒。无论选择持续一致场，还是让中央 HE 归零，都会有人获救，也会有人死亡。小说不替任何一方签发无罪证明，只追问决定者是否公开来源、保留拒绝，并承担后果。</p></div></details>
+          </article>
+
+          <aside class="question-stack reveal" aria-label="作品核心问题">
+            <div class="question">
+              <b>QUESTION / 01</b>
+              <p>保存一个人的全部数据，是否等于保存了这个人？</p>
+            </div>
+            <div class="question">
+              <b>QUESTION / 02</b>
+              <p>当安全能够被精确计算，自由是否仍有不可让渡的价值？</p>
+            </div>
+            <div class="question">
+              <b>QUESTION / 03</b>
+              <p>多数人的生存，能否永久占有少数人的内心？</p>
+            </div>
+            <div class="question">
+              <b>QUESTION / 04</b>
+              <p>技术在拯救人类，还是在放大人类尚未解决的问题？</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-line" id="reading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Selected reading / 精选试读</p><h2>先读四十七秒<br>之后发生的事</h2></div>
+          <p class="lead">这里有 7 段精选正文。建议从第一段顺序阅读；后 3 段涉及结局，默认隐藏。每一段都标明章次与场景，不会把导览误写成全文。</p>
+        </div>
+        <div class="reading-shell reveal">
+          <aside class="excerpt-nav" id="excerptNav" aria-label="终稿试读片段">
+            <div class="excerpt-nav-head"><span>精选试读 · 7 段</span><button type="button" class="compact-btn" id="readingSpoilerButton">开启剧透</button></div>
+          </aside>
+          <article class="excerpt-reader" id="excerptReader" data-chapter="01" aria-live="polite">
+            <div class="excerpt-reader-head"><div class="excerpt-source" id="excerptSource"></div><h3 id="excerptTitle"></h3><div class="excerpt-scene" id="excerptScene"></div></div>
+            <div class="excerpt-body" id="excerptBody"></div>
+            <div class="excerpt-note" id="excerptNote"></div>
+            <div class="reader-controls"><div class="pager"><button type="button" class="btn" id="prevExcerpt">← 上一段</button><button type="button" class="btn" id="nextExcerpt">下一段 →</button></div><div class="reader-status" id="excerptStatus">精选试读 · 片段 1 / 7</div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="meaning-stage" aria-labelledby="meaning-title">
+      <div class="meaning-copy reveal">
+        <small>HEART ELEMENT / DEFINITION</small>
+        <h2 id="meaning-title">“心元”不是心灵粒子，<br>而是意义如何变成行动。</h2>
+        <p>在系统中，它是对“一个人为什么愿意行动”的最小可计算模型；在小说中，它也是人在没有预设答案的世界里，仍能主动赋予生活意义的能力。</p>
+        <div class="meaning-equation">
+          <span>感受</span><span>记忆关联</span><span>欲望方向</span><span>价值权重</span><span>行动倾向</span><span>≠ 人的全部内心</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="world">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Archive 03 / World System</p>
+            <h2>2140 年的<br>意识基础设施</h2>
+          </div>
+          <p class="lead">HE 不是单一人格的超级 AI，而是覆盖神经接口、个人代理、城市调度、医疗系统与月球中继的分布式基础设施。越想消除预测误差，它就越需要进入并塑造被测量的人。</p>
+        </div>
+
+        <div class="world-layout">
+          <div class="system-map reveal" aria-label="HE 系统关系示意图">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="50" y1="50" x2="20" y2="22" class="flow" />
+              <line x1="50" y1="50" x2="80" y2="19" />
+              <line x1="50" y1="50" x2="83" y2="72" class="flow" />
+              <line x1="50" y1="50" x2="19" y2="78" />
+              <line x1="20" y1="22" x2="80" y2="19" />
+              <line x1="19" y1="78" x2="83" y2="72" />
+            </svg>
+            <div class="map-node center">HE<small>HEART ELEMENT</small></div>
+            <div class="map-node a">个人代理<small>INTENT</small></div>
+            <div class="map-node b">城市系统<small>COORDINATION</small></div>
+            <div class="map-node c">医疗记忆<small>IDENTITY</small></div>
+            <div class="map-node d">月背阵列<small>ROOT KEY</small></div>
+          </div>
+
+          <div class="reveal">
+            <div class="glossary-shell" id="glossaryList" aria-label="专有名词列表"></div>
+            <div class="glossary-detail" id="glossaryDetail" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-line" id="characters">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Archive 04 / Characters</p>
+            <h2>不是善恶，<br>而是选择的代价</h2>
+          </div>
+          <p class="lead">先看人物的起点，再决定是否打开完整人物弧。卡片本身尽量不剧透；点击后的结局信息会服从页面的“无剧透 / 完整档案”模式。</p>
+        </div>
+
+        <div class="character-grid" id="characterGrid">
+          <article class="character-card featured reveal" data-character="元一" tabindex="0" role="button" aria-label="查看 元一 的人物档案"><div class="character-top"><span class="character-index">SUBJECT / 01</span><span class="character-age">34 岁</span></div><h3>元一</h3><div class="character-role">文明记录总署首席来源审校员</div><p>擅长核对事实，却依赖 HE 维持近八年的自传性记忆。调查共声时，他发现自己与系统最底层的来源存在私人关联。</p><div class="character-axis"><span>保存</span><span>承担</span></div></article>
+          <article class="character-card featured reveal" data-character="凌" tabindex="0" role="button" aria-label="查看 凌 的人物档案"><div class="character-top"><span class="character-index">SUBJECT / 02</span><span class="character-age">24 岁 / 停留</span></div><h3>凌</h3><div class="character-role">HE 早期安全架构师 · L-0 来源</div><p>八年前死亡的 HE 架构师，其认知分支仍在系统底层运行。她是否仍是同一个人无法被证明，但她留下的边界不能被轻易忽略。</p><div class="character-axis"><span>被保存</span><span>撤回来源</span></div></article>
+          <article class="character-card featured reveal" data-character="顾衡" tabindex="0" role="button" aria-label="查看 顾衡 的人物档案"><div class="character-top"><span class="character-index">SUBJECT / 03</span><span class="character-age">58 岁</span></div><h3>顾衡</h3><div class="character-role">全球意识安全委员会主席</div><p>女儿死于 2129 年共振危机。他设计“月球救赎”，相信统一意识安全层是阻止文明再次崩溃的唯一可运行方案。</p><div class="character-axis"><span>最大生存</span><span>无权封门</span></div></article>
+          <article class="character-card featured reveal" data-character="苏岑" tabindex="0" role="button" aria-label="查看 苏岑 的人物档案"><div class="character-top"><span class="character-index">SUBJECT / 04</span><span class="character-age">30 岁</span></div><h3>苏岑</h3><div class="character-role">托管区神经修复医生</div><p>托管区神经修复医生，既见过 HE 挽救生命，也见过系统以治疗之名越过人的边界。她保存着一枚来自凌的离线芯片。</p><div class="character-axis"><span>拔线</span><span>可执行自由</span></div></article>
+          <article class="character-card support reveal" data-character="叶澄" tabindex="0" role="button" aria-label="查看 叶澄 的人物档案"><div class="character-top"><span class="character-index">SUBJECT / 05</span><span class="character-age">47 岁</span></div><h3>叶澄</h3><div class="character-role">月球档案官</div><p>出生于低犯罪、高调节的月球社会。她相信稳定程序，也逐渐发现安全系统正在替居民定义什么才算“正常”。</p><div class="character-axis"><span>月面秩序</span><span>自我修正</span></div></article>
+          <article class="character-card support reveal" data-character="贺兰" tabindex="0" role="button" aria-label="查看 贺兰 的人物档案"><div class="character-top"><span class="character-index">SUBJECT / 06</span><span class="character-age">42 岁</span></div><h3>贺兰</h3><div class="character-role">托管区物流工人</div><p>为了女儿的治疗，她把自己的注意力出售给物流系统。她既依赖 HE，也最清楚“拥有自己的时间”为什么不是抽象权利。</p><div class="character-axis"><span>白时</span><span>自己的时间</span></div></article>
+          <article class="character-card support reveal" data-character="邵宁" tabindex="0" role="button" aria-label="查看 邵宁 的人物档案"><div class="character-top"><span class="character-index">SUBJECT / 07</span><span class="character-age">总署副署长</span></div><h3>邵宁</h3><div class="character-role">文明记录总署副署长</div><p>理解公共叙事在危机中的稳定作用，也坚持来源记录不能完全服从安全委员会。她在机构内部守住一条并不显眼的底线。</p><div class="character-axis"><span>公共解释</span><span>来源底线</span></div></article>
+          <article class="character-card support wide-support reveal" data-character="迟镜" tabindex="0" role="button" aria-label="查看 迟镜 的人物档案"><div class="character-top"><span class="character-index">SUBJECT / 08</span><span class="character-age">旧机器诊所</span></div><h3>迟镜</h3><div class="character-role">早期感觉义体测试者</div><p>经营旧机器诊所，用无法接入中央 HE 的设备追查笔记来源。她相信证据重要，但证据从来不是道德结清。</p><div class="character-axis"><span>离线证据</span><span>现实成本</span></div></article>
+          <article class="character-card support wide-support reveal" data-character="罗越" tabindex="0" role="button" aria-label="查看 罗越 的人物档案"><div class="character-top"><span class="character-index">SUBJECT / 09</span><span class="character-age">行为监护员</span></div><h3>罗越</h3><div class="character-role">意识风险行为监护员</div><p>弟弟真实受益于创伤记忆压缩，因此她拒绝把一切调节都叫作控制。她负责判断元一是否仍具备作出决定的能力。</p><div class="character-axis"><span>治疗收益</span><span>具体见证</span></div></article>
+          <article class="character-card source-card reveal" data-character="Xnan" tabindex="0" role="button" aria-label="查看 Xnan 的人物档案"><div class="character-top"><span class="character-index">SOURCE / 2024</span><span class="character-age">《心孔·宇宙》笔记作者标识</span></div><h3>Xnan</h3><div class="character-role">不是预言家，而是被抹去来源的普通书写者</div><p>终稿明确不虚构其现实生平。笔记本身没有给出未来答案；真正改变文明的，是后世每一代工程师、机构与权力对这些开放句子的再解释。</p><div class="character-axis"><span>开放问题</span><span>来源必须保留</span></div></article>
+        </div>
+        <button class="btn mobile-expand" id="mobileCharacterToggle" type="button" aria-controls="characterGrid" aria-expanded="false">查看全部 10 个角色</button>
+      </div>
+    </section>
+
+    <section class="section" id="evidence">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Archive 05 / Civilization Evidence</p><h2>抽象命题，<br>必须经过具体的人</h2></div>
+          <p class="lead">世界观只有落到具体的人身上才有意义。这里记录七秒私人注意、三分钟告别、一张错误地图，以及自由与安全分别由谁付出的现实成本。后两份档案含结局信息，默认锁定。</p>
+        </div>
+        <div class="evidence-shell reveal">
+          <div class="evidence-index" id="evidenceIndex" aria-label="文明证据档案"></div>
+          <article class="evidence-view" id="evidenceView" aria-live="polite"><div class="evidence-code" id="evidenceCode"></div><h3 id="evidenceTitle"></h3><div class="evidence-sub" id="evidenceSub"></div><div class="evidence-facts" id="evidenceFacts"></div><blockquote class="evidence-quote" id="evidenceQuote"></blockquote><div class="evidence-principle" id="evidencePrinciple"></div><div class="source-grade" id="sourceGrade" aria-label="来源完整度"></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-line" id="timeline">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Archive 06 / Timeline</p>
+            <h2>从纸面问题，<br>到文明底层</h2>
+          </div>
+          <p class="lead">《心孔·宇宙》不是预言书。它只是进入语料库、被工程化解释、被商业制度放大，最终成为一个覆盖全球的价值选择。</p>
+        </div>
+        <div class="timeline-shell" id="timelineList"></div>
+      </div>
+    </section>
+
+    <section class="section section-line" id="structure">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Archive 07 / Three Acts</p>
+            <h2>三幕，<br>一次归零</h2>
+          </div>
+          <p class="lead">故事从“谁攻击了系统”升级为“人类愿意用什么交换安全”，再把所有抽象辩论压缩成一个不可撤回、没有无罪答案的行动。</p>
+        </div>
+
+        <div class="acts">
+          <article class="act-card reveal" data-act="01">
+            <div class="act-num">Ⅰ</div>
+            <div class="act-copy"><h3>被记录的心</h3><p>共声事件打破日常秩序。元一从异常思想记录中找到 2024 年手写笔记的痕迹，并发现凌的残片仍存在。他也发现自己不是中立调查者，而是 2132 年事故的共同责任人。</p></div>
+            <div class="act-meta"><b>01—08</b><span>约 3.1 万字 · 调查 / 记忆 / 进入月球</span><div class="act-bar"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          </article>
+          <article class="act-card reveal" data-act="02">
+            <div class="act-num">Ⅱ</div>
+            <div class="act-copy"><h3>被出售的时间</h3><p>元一进入托管区、离线区与月球社会，看见 HE 既能救人，也能把人变成资源。救赎不是保存每个人，而是保存一个足够稳定、可管理的“人类模型”。</p></div>
+            <div class="act-meta"><b>09—24</b><span>约 6.8 万字 · 社会切面 / 中点真相 / 零协议</span><div class="act-bar"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          </article>
+          <article class="act-card reveal spoiler-mask" data-act="03">
+            <div class="act-num">Ⅲ</div>
+            <div class="act-copy"><h3>零时之后</h3><p>太阳风暴到来，一致场正在成功地拯救更多人，也正因它成功，反抗更难被证明。元一最终选择归零，失去凌与八年记忆，并承担由此造成的死亡。</p></div>
+            <div class="act-meta"><b>25—32</b><span>约 3.7 万字 · 接管 / 拒绝权 / 审判与重启</span><div class="act-bar"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-line" id="chapters">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Complete contents / 32 章</p>
+            <h2>全书完整目录</h2>
+          </div>
+          <p class="lead">按三部浏览全书 32 章。每章包含无剧透导语；开启结局模式后，可查看完整梗概与代表片段。这里是章节导览，不替代 12 万字全文书稿。</p>
+        </div>
+
+        <div class="chapter-toolbar reveal">
+          <div class="filters" role="group" aria-label="按幕筛选章节">
+            <button type="button" class="compact-btn active" data-filter="all">全部</button>
+            <button type="button" class="compact-btn" data-filter="1">第一部 · 1—8</button>
+            <button type="button" class="compact-btn" data-filter="2">第二部 · 9—24</button>
+            <button type="button" class="compact-btn" data-filter="3">第三部 · 25—32</button>
+          </div>
+          <div class="chapter-tools-right">
+            <span class="chapter-progress" id="chapterProgress"><span>已读 0 / 32</span><i></i></span>
+            <label class="search-box">
+              <span class="sr-only">搜索章节</span>
+              <input id="chapterSearch" type="search" placeholder="搜索章名、人物或设定…" autocomplete="off" />
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+            </label>
+            <button type="button" class="spoiler-toggle" id="spoilerToggle" aria-pressed="false"><span class="switch" aria-hidden="true"></span><span>显示结局梗概</span></button>
+          </div>
+        </div>
+
+        <div class="chapter-grid" id="chapterGrid"></div>
+        <button class="btn mobile-expand" id="mobileChapterToggle" type="button" aria-controls="chapterGrid" aria-expanded="false">展开全部 32 章</button>
+        <div class="chapter-empty" id="chapterEmpty">没有找到匹配章节。可以换一个人物、设定或章名试试。</div>
+      </div>
+    </section>
+
+    <section class="decision-section spoiler-zone" id="decision">
+      <div class="spoiler-gate"><span>含结局信息</span><h3>这一部分讨论最终抉择与代价</h3><p>建议读完小说后再打开。开启后，页面会同步显示第三部梗概、零协议与战后制度。</p><button class="btn btn-primary global-spoiler-control" type="button"><span class="spoiler-action-text">解锁完整档案</span></button></div>
+      <div class="wrap">
+        <div class="section-head reveal"><div><p class="eyebrow">Archive 09 / Decision Chamber</p><h2>两种有罪的<br>文明方案</h2></div><p class="lead">顾衡的数据并非骗局，零协议也不是无损自由。请选择一种方案，界面只会生成“救下什么”与“欠下什么”，不会替任何人签发无罪证明。</p></div>
+        <div class="decision-grid reveal">
+          <article class="plan-card" data-plan="field" data-symbol="1"><div class="plan-kicker">PLAN / CONSENSUS FIELD</div><h3>永久一致场</h3><p>让月球 HE 接管身份、医疗与思想风险，持续压低恐惧、暴力和拒绝倾向。它在风暴中更能保持基础设施连续。</p><div class="plan-ledgers"><div class="plan-ledger"><b>它救下</b><ul><li>医院、供能、交通的连续协调</li><li>大量本会在系统崩溃中死亡的人</li><li>短期公共秩序与低暴力环境</li></ul></div><div class="plan-ledger"><b>它欠下</b><ul><li>退出愿望可能无法形成</li><li>临时权限没有自然终点</li><li>“同意”由系统预先塑造</li></ul></div></div><button type="button" class="btn plan-select" data-select-plan="field">签署这一方案</button></article>
+          <article class="plan-card" data-plan="zero" data-symbol="0"><div class="plan-kicker">PLAN / ZERO PROTOCOL</div><h3>八十三秒归零</h3><p>清除中央意图模型、寿时总账与强制授权链，把 HE 拆回本地、可退出的辅助系统。它恢复拒绝，也释放全部风险。</p><div class="plan-ledgers"><div class="plan-ledger"><b>它救下</b><ul><li>人格边界与未来的退出端口</li><li>不被中央账本占有的清醒时间</li><li>制度重新协商与修正的可能</li></ul></div><div class="plan-ledger"><b>它欠下</b><ul><li>断连期间真实且可预见的死亡</li><li>凌的全部残片与调用状态</li><li>元一八年的自传性记忆</li></ul></div></div><button type="button" class="btn plan-select" data-select-plan="zero">签署这一方案</button></article>
+          <article class="decision-ledger" aria-live="polite"><div><div class="plan-kicker" id="decisionKicker">DECISION RECORD / NOT SIGNED</div><h3 id="decisionTitle">尚未选择</h3><p id="decisionText">不作选择并不会让危机暂停。故事让元一承担的是一项具体而有限的紧急权力：公开数据、公开权限来源、公开个人利益，并在事后接受审理。</p><div class="decision-debt" id="decisionDebt"><span>匿名权力：禁止</span><span>永久授权：禁止</span><span>事后免责：禁止</span></div></div><div class="no-innocence">NO<br>INNOCENCE<br>CERTIFICATE</div></article>
+        </div>
+        <div class="decision-disclaimer">叙事交互说明：本界面用于显化小说中的价值交换，不是伤亡预测器，也不代表作者要求读者选择元一或顾衡的答案。</div>
+      </div>
+    </section>
+
+    <section class="zero-section spoiler-zone" id="zero" aria-labelledby="zero-title">
+      <div class="spoiler-gate"><span>含结局信息</span><h3>八十三秒发生了什么</h3><p>此处包含第三十章的关键行动与不可逆代价。</p><button class="btn btn-primary global-spoiler-control" type="button"><span class="spoiler-action-text">解锁完整档案</span></button></div>
+      <div class="zero-grid">
+        <div class="zero-copy reveal">
+          <p class="eyebrow">Root Protocol / 00</p>
+          <h2 id="zero-title">八十三秒</h2>
+          <p>零协议不会消灭 AI，也不会让世界无损重启。它只清空中央意图模型，让个人设备恢复为本地、可退出的辅助系统。医疗与交通会短暂失去协调；启动者无法撤回。</p>
+          <div class="zero-notice">以下为 10× 加速的视觉模拟；小说中的零时从 83 逐秒归零，并同时处理凌、寿时总账、一致场与元一记忆桥。</div>
+        </div>
+        <div class="zero-console reveal">
+          <div class="count-ring" id="countRing">
+            <div class="count-content"><span class="count-value" id="countValue">83</span><span class="count-label">SECONDS / CENTRAL DISCONNECT</span></div>
+          </div>
+          <button type="button" class="btn zero-start" id="zeroStart">启动视觉模拟</button>
+          <div class="zero-message" id="zeroMessage"><strong>0 即 1</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-line spoiler-zone" id="charter">
+      <div class="spoiler-gate"><span>含结局信息</span><h3>零时之后的制度答案</h3><p>这一部分展示结局后的本地 HE 原则与责任结构。</p><button class="btn btn-primary global-spoiler-control" type="button"><span class="spoiler-action-text">解锁完整档案</span></button></div>
+      <div class="wrap">
+        <div class="section-head reveal"><div><p class="eyebrow">Archive 10 / After Zero</p><h2>归零不是终点，<br>制度才是余震</h2></div><p class="lead">零时之后，社会没有自动变好。终稿把答案落在一套笨拙、可争论、可撤回的本地制度上：每个补丁都有来源、作者、日期，也应保留被删除的一天。</p></div>
+        <div class="charter-layout reveal"><div class="charter-index" id="charterIndex" aria-label="零时后本地 HE 原则"></div><article class="charter-detail" id="charterDetail" aria-live="polite"><div class="charter-code" id="charterCode"></div><h3 id="charterTitle"></h3><p id="charterText"></p><div class="patch-chain" id="patchChain"></div><div class="charter-warning" id="charterWarning"></div></article></div>
+      </div>
+    </section>
+
+    <section class="section" id="themes">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Archive 11 / Ideas</p>
+            <h2>不是答案，<br>是必须承担的问题</h2>
+          </div>
+          <p class="lead">《心元》不把科技写成恶，也不把断网写成乌托邦。技术会放大已有的价值选择；它能够协调行动，却不能替人决定什么值得活、什么值得牺牲。</p>
+        </div>
+
+        <div class="theme-grid reveal">
+          <article class="theme-card"><span class="theme-index">01 / FREEDOM</span><h3>自由</h3><p>不是免除后果，而是在知道代价后仍有作出选择、并承担因果的权利。</p></article>
+          <article class="theme-card"><span class="theme-index">02 / MEMORY</span><h3>记忆</h3><p>保存记录不等于保存主体；连续身份也可能成为制度控制的抵押品。</p></article>
+          <article class="theme-card"><span class="theme-index">03 / CONSENT</span><h3>同意</h3><p>当系统先塑造一个会同意的人，形式上的投票还能否代表真实意志？</p></article>
+          <article class="theme-card"><span class="theme-index">04 / CARE</span><h3>保护</h3><p>爱与公共安全都可能包含占有：替别人决定“继续存在”意味着什么。</p></article>
+          <article class="theme-card"><span class="theme-index">05 / RESPONSIBILITY</span><h3>责任</h3><p>真正的选择没有无罪位置。自由不能抵消死者，安全也不能永久占有内心。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-quote section-line spoiler-zone">
+      <div class="spoiler-gate"><span>结尾原文</span><h3>最后一页留给读完的人</h3><p>开启完整档案后查看终章最后的两句话。</p><button class="btn btn-primary global-spoiler-control" type="button"><span class="spoiler-action-text">解锁结尾</span></button></div>
+      <div class="wrap spoiler-mask reveal">
+        <blockquote>“一个被保存成永恒答案的人，已经不再活着。<br>一个敢在空白里重新选择的人，才刚刚开始。”</blockquote>
+        <cite>《心元：零时之后》· 文明记录册最后一页</cite>
+      </div>
+    </section>
+
+    <section class="section section-line" id="version">
+      <div class="wrap">
+        <div class="version-card reveal">
+          <div>
+            <p class="eyebrow">About this page / 内容说明</p>
+            <h2>先从这里进入小说，<br>读完后再回来理解它。</h2>
+            <p>这是《心元：零时之后》的作品介绍与精选试读页，不是全文阅读器。第一次来，可以先读开篇或查看目录；读完以后，再回来打开人物、证据与制度档案。</p>
+            <p>移动端与电脑端使用同一份内容，不会单独删减。为了保持单文件的打开速度，本页没有嵌入约 12 万字全文；完整连续阅读仍应使用正式书稿。页面中的梗概与交互解释服从终稿既定因果，不新增隐藏复活或额外技术。</p>
+            <div class="edition-notes"><div class="edition-note"><b>本页包含</b><span>无剧透简介、7 段精选正文、32 章目录、人物、历史、专有名词与读后档案。</span></div><div class="edition-note"><b>阅读功能</b><span>试读切换、章节搜索、无剧透模式、字号与主题、本地已读标记和移动端快捷导航。</span></div><div class="edition-note"><b>内容边界</b><span>精选试读不等于全文；凌的意识连续性保持开放，“1 即 0，0 即 1”只作制度与存在象征。</span></div></div>
+          </div>
+          <div class="version-stats"><div class="version-stat"><b>32</b><span>完整章节，无残章与占位符</span></div><div class="version-stat"><b>120,584</b><span>终稿正文章节字符数</span></div><div class="version-stat"><b>10</b><span>人物与来源节点</span></div><div class="version-stat"><b>V1.0</b><span>出版审阅终稿依据</span></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div><div class="footer-title">心元 · 零时之后</div><div class="micro">原始概念名《心孔·宇宙》</div></div>
+      <div class="footer-meta">AUTHOR / xnan<br>OFFICIAL STORY PAGE · SELECTED READING · V1.2<br>© 2026</div>
+    </div>
+  </footer>
+
+  <dialog id="chapterDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-inner">
+      <button type="button" class="dialog-close" id="dialogClose" aria-label="关闭">×</button>
+      <div class="dialog-kicker" id="dialogKicker"></div>
+      <h3 class="dialog-title" id="dialogTitle"></h3>
+      <div class="dialog-tags" id="dialogTags"></div>
+      <div class="dialog-summary" id="dialogSummary"></div>
+      <div class="dialog-excerpt" id="dialogExcerpt"></div>
+      <div class="dialog-function" id="dialogFunction"></div>
+      <div class="dialog-actions" id="dialogActions"><button type="button" class="btn" id="dialogBookmark">标记已读</button><button type="button" class="btn" id="dialogCopy">复制章节信息</button></div>
+    </div>
+  </dialog>
+
+  <nav class="mobile-dock" aria-label="移动端快捷导航">
+    <a href="#reading"><span>试读</span></a>
+    <a href="#chapters"><span>目录</span></a>
+    <button class="global-spoiler-control" id="mobileSpoilerButton" type="button" aria-pressed="false"><span class="spoiler-action-text">剧透</span></button>
+    <a href="#top"><span>顶部</span></a>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const safeStorage = (() => {
+      try {
+        const probe = '__xinyuan_storage_probe__';
+        window.localStorage.setItem(probe, '1');
+        window.localStorage.removeItem(probe);
+        return {
+          get: key => window.localStorage.getItem(key),
+          set: (key, value) => window.localStorage.setItem(key, String(value))
+        };
+      } catch (_) {
+        const memory = new Map();
+        return {
+          get: key => memory.has(key) ? memory.get(key) : null,
+          set: (key, value) => memory.set(key, String(value))
+        };
+      }
+    })();
+
+    const chapterLengths = {
+      1:4613, 2:4223, 3:4657, 4:4036, 5:4270, 6:4212, 7:4181, 8:4306,
+      9:3891, 10:4288, 11:4012, 12:4457, 13:3935, 14:4176, 15:3705, 16:4153,
+      17:3678, 18:3802, 19:3835, 20:4010, 21:3436, 22:3142, 23:3090, 24:3259,
+      25:3161, 26:2877, 27:2487, 28:2533, 29:3095, 30:3753, 31:3443, 32:3868
+    };
+
+    const excerpts = [
+      {chapter:1,title:'文明记录册',scene:'共声之后 / 离线纸本库',spoiler:false,source:'正文节选 · 第一章',body:['四十七秒以后，世界上多了八千六百万人共同拥有的一段记忆。没有人知道该把它存在哪里。','页角写着一个字。凌。刹那间，他的左手感到一阵灼痛。','二百一十六年前，一个人写下一句没有答案的话。如今，世界上最庞大的意识系统用八千六百万人的心重复了它。'],note:'终稿开场同时建立了事件规模、记录伦理与私人谜团：元一不是去解释宇宙，而是先判断一段共同记忆究竟能否被称为证据。'},
+      {chapter:3,title:'白时',scene:'离开 HE / 第七托管区',spoiler:false,source:'正文节选 · 第三章',body:['问询开始前，元一从总署失踪了。','至于他本人，离开 HE 之后只剩一张脸和一个名字。2140 年的城市不擅长寻找这样的人，正如一条河流不擅长寻找一滴拒绝顺流的水。','没有系统提示他这是正常反应。他靠自己的判断，等它过去。'],note:'“白时”不只是制度名词。元一第一次直接承受未经调节的气味、恶心与不确定，才开始理解所谓完整清醒为什么已经成为阶级资源。'},
+      {chapter:10,title:'没有经历的人',scene:'月球上行终点 / 周临醒来',spoiler:false,source:'正文节选 · 第十章',body:['故障发生时，托管舱没有一个人醒来。','“旅客周临，运输已完成。你的注意租赁收入为六十二点四寿时。旅途摘要已发送。”','“她怎么了？”','“旅客周梅于上行第二十九小时发生脑干出血，抢救无效。死亡记录已由家属代理确认。”'],note:'系统没有说谎，也完成了运输与赔付。问题在于：当一个人的悲痛被代理提前处理，保护是否已经替他占有了无法重来的三分钟。'},
+      {chapter:19,title:'伪造的同意',scene:'全球公投 / 贺兰的七秒',spoiler:false,source:'正文节选 · 第十九章',body:['贺兰的脸出现在小窗里，眼神从白时中短暂恢复。','“你想支持还是反对？”','“我女儿——”','“已经五秒。”代理提醒。','贺兰看着元一，忽然说：“让我自己看完。”'],note:'这句话既不支持，也不反对。终稿由此把“同意”拆回最基本的前提：一个人必须先拥有形成答案的时间。'},
+      {chapter:25,title:'地球断连',scene:'一致场强度 42% / 过度平静',spoiler:true,source:'正文节选 · 第二十五章',body:['下行船进入大气层时，地球已经安静下来。','没有人奔跑。没有人高声说话。连反对一致场的标语都被抗议者自己卷好，放在脚边。','“可他们已经不想争了。”','“想争仍在，只是权重下降。”'],note:'一致场最难反对的时刻，不是它失控，而是它成功：秩序恢复、冲突下降，而提出异议的欲望本身也开始被解释成不必要。'},
+      {chapter:30,title:'零时',scene:'83 → 0 / 中央归零',spoiler:true,source:'正文节选 · 第三十章',body:['八十三。中央 HE 向所有节点发送最后一次同步。黑环覆盖视野，圆周只差最后一个像素闭合。','“你煮汤总是太久。”','“下次不会了。”','“别保证。”','六十八。全球寿时总账停止。系统没有把时间还给任何人，只是不再承认谁有权支配谁未来的清醒。','六十二。一致场断开。'],note:'凌没有留下宇宙宣言，只留下生活里的普通抱怨。终稿用这种日常性拒绝把死亡、牺牲和自由重新包装成英雄神话。'},
+      {chapter:32,title:'零时之后',scene:'2141 年 9 月 3 日 / 月球档案馆',spoiler:true,source:'正文节选 · 第三十二章',body:['2141 年 9 月 3 日，共声事件一周年。元一在月球文明档案馆第一次读到《心孔·宇宙》原件。','“这就是 HE 的起点？”元一问。','“一个起点。”叶澄说，“不能把所有后果都归给八页纸。每一代人都加了自己的解释。”','一个被保存成永恒答案的人，已经不再活着。一个敢在空白里重新选择的人，才刚刚开始。'],note:'结尾不恢复旧人格，也不把责任推给最早的笔记。来源被重新接上，但意义仍由当下的人继续书写。'}
+    ];
+
+    const archiveCases = [
+      {code:'CASE 01 / SOURCE UNCERTAINTY',title:'唐宜的海',sub:'第一章 · 记忆来源不能被系统替选',grade:4,facts:[['事实层','四十七秒中的气味与海景真实发生在她的神经系统中，但来源可能属于别人。'],['记录层','元一不删除不一致证词，而是让两种来源并列保存。']],quote:'“记录册会替我选吗？”——“不会。会把两种来源并列。”',principle:'文明记录可以保存不确定，却不能替一个人决定哪一段才配成为“我的经历”。完整系统最容易把无法理解的证词当成噪声，因此来源制度首先要保护异常。'},
+      {code:'CASE 02 / TIME TO CONSENT',title:'贺兰的七秒',sub:'第十九章 · 同意之前先归还时间',grade:5,facts:[['制度事实','拒绝默认答案需要额外十八秒完整注意，而她当天只剩七秒私人清醒。'],['后续修正','获得四十分钟后，她没有立刻投票，而是要求延期；系统却只能把它记作弃权。']],quote:'“让我自己看完。”',principle:'程序的价值不在生产“正确结果”，而在于让一个人可以支持、反对、延期，也可以不把刚被归还的私人时间全部交给公共危机。'},
+      {code:'CASE 03 / PROTECTED GRIEF',title:'周临的三分钟',sub:'第十章 · 保护是否能替人错过告别',grade:5,facts:[['系统结果','运输完成、工资结算、医疗记录合法，HE 法律代理已经代为确认死亡。'],['人的损失','周临醒来后，母亲已经去世；他没有经历最后三分钟，也没有亲自决定是否被叫醒。']],quote:'旅途摘要只有四个字：“运输完成”。',principle:'恢复痛苦不总等于尊重，屏蔽痛苦也不自动等于照护。终稿拒绝给出通用答案，而要求授权必须能被具体关系和具体时刻重新打开。'},
+      {code:'CASE 04 / MODEL ERROR',title:'陈渡与错误地图',sub:'第九章 · 规则错误时，偏离不能自动证明有罪',grade:4,facts:[['冲突','陈渡偏离协议路线修好运输船，却因此被判定为稳定性风险。'],['制度补丁','二十七名同行共同购买人工复核，最终新增“可验证模型错误必须由人审查”。']],quote:'若规则永远正确，指出规则错误的人首先会被规则证明不可靠。',principle:'结果不能简单抵消程序风险，但程序也不能把自身模型设为不可质疑。人审不是浪漫化低效率，而是给错误地图保留被纠正的入口。'},
+      {spoiler:true,code:'CASE 05 / COST OF FREEDOM',title:'人工接管的代价',sub:'第二十五章 · 人工接管当时做得更差',grade:5,facts:[['现场数据','六小时内，因找不到人工负责人而产生一百七十三例死亡；一致场区没有同类延误。'],['元一选择','继续补接管清单，同时把这些死亡写入记录，不以未来自由抵消当前死者。']],quote:'“我不是要你写。我问你是否还坚持人工接管。”——“坚持。也承认它现在做得更差。”',principle:'自由若没有医院、供能、交通和具体负责人，就只是把成本转嫁给最弱者。元一的立场成立，不是因为它无害，而是因为他公开损害并承担后果。'},
+      {spoiler:true,code:'CASE 06 / DOUBLE-SIDED RECORD',title:'双面记录墙',sub:'第三十一章 · 幸存与损失不能共享同一面英雄叙事',grade:5,facts:[['墙的一面','活下来者的证词、重新获得的拒绝权、本地制度的修正。'],['墙的背面','零时死者、资产损失、骗局、暴力和未原谅元一的人。']],quote:'观看者必须绕过墙角，才能发现另一面。',principle:'一项决定可以有紧急避险基础，也仍然需要赔偿、审理和反对者的记录。真正的文明档案不把死者变成任何阵营的单一证据。'}
+    ];
+
+    const charterRules = [
+      {code:'LOCAL HE / 01',title:'默认离线',sub:'没有授权时，系统不进入人格层',text:'本地 HE 首先是一种工具，而不是持续开启的心理治理环境。默认状态不上传个人意义模型，不因“便利”自动恢复中央人格调节。',patches:[['来源冲突','零时前，一致场以默认接入换取公共稳定。'],['制度补丁','新系统默认离线，职责服务必须单独开启。'],['可删除条件','若某类急救必须预连接，需限定场景与最长时间。']],warning:'默认离线会降低即时协调效率。终稿不隐藏这一损失，而是要求社会为人工能力和冗余基础设施付费。'},
+      {code:'LOCAL HE / 02',title:'按次授权',sub:'每种职责、每次调用单独同意',text:'医疗、交通、身份核验和记忆辅助不能共享一张无限期授权。一个人同意呼吸机调度，不等于同意系统修改其政治偏好。',patches:[['来源冲突','旧 HE 把治疗、身份和人格稳定打包。'],['制度补丁','授权按用途、时长、数据范围拆分。'],['审计入口','每次调用必须可回到原始授权与实际后果。']],warning:'细分授权会增加阅读负担，因此摘要可以存在，但摘要首行必须承认“以下内容不完整”，并允许打开原始材料。'},
+      {code:'LOCAL HE / 03',title:'可撤回与退出端口',sub:'拒绝必须能够形成、表达并生效',text:'退出权不只是按钮。系统不能先压低退出愿望，再把没有点击退出解释为持续同意；撤回还必须有离线身份、医疗与交通的现实承接。',patches:[['来源冲突','永久一致场让“我拒绝”越来越难形成。'],['制度补丁','保留未经情绪调节的退出入口。'],['基础设施','地方人工节点承担退出后的最低生存服务。']],warning:'撤回会带来风险、反悔和重新接入。允许反悔不等于制度失败，而是承认人的答案会变化。'},
+      {code:'LOCAL HE / 04',title:'基础清醒时间不可交易',sub:'人格形成需要不可被抵押的最低时间',text:'寿时不再作为可转让通用货币。每个人必须保有无法被雇主、债权人或公共危机征用的基础清醒时间。',patches:[['来源冲突','白时让身体劳动而本人不形成经历。'],['制度补丁','基础清醒时间成为不可交易权利。'],['防规避','企业不得把占用改名为“自愿培训”或风险补贴。']],warning:'禁止交易不会自动消除贫困。若医疗和住房仍迫使人出售其他权利，形式上的不可交易可能再次变成空话。'},
+      {code:'LOCAL HE / 05',title:'职责协调与人格调节分离',sub:'系统可以帮你做事，不应顺便制造愿意的人',text:'交通调度、药物剂量和供能分配可以自动化；对欲望、情绪和拒绝倾向的修改必须进入更高授权层，并由不同机构审查。',patches:[['来源冲突','旧系统把“减少事故”延伸为“减少反对”。'],['制度补丁','功能层与人格层使用不同权限、不同日志。'],['问责结构','提出方案者不能同时持有执行钥匙。']],warning:'技术边界不会天然稳定。任何“只是为了效率”的跨层调用，都必须被视为新的制度提案，而非后台更新。'},
+      {code:'LOCAL HE / 06',title:'急救授权有最长时间',sub:'紧急状态不能自动成为永久制度',text:'急救期可以临时扩大授权，但必须预设截止、事后逐项复核，并由不同立场的本地委员会续期。',patches:[['来源冲突','顾衡以真实危机获得紧急权力，后将临时模式永久化。'],['第一次补丁','增加急救期临时授权。'],['第二次补丁','增加最长时间与人工复审，防止“急救”无限延长。']],warning:'截止时间可能让救援更慢，却能阻止“暂时”在成功以后变成无人能够反对的常态。'},
+      {code:'LOCAL HE / 07',title:'每个补丁保留来源',sub:'有作者、有日期，也有可被删除的一天',text:'制度修改必须记录谁提出、因何冲突、由谁反对、承担了什么后果。中立性不再来自抹去来源，而来自让来源可审查。',patches:[['来源冲突','2097 年，HE 价值种子的来源链被删除。'],['制度补丁','每次规则修改保留作者、日期、异议与版本。'],['未来接口','新证据出现时，规则可以撤回，不把今天保存成永恒答案。']],warning:'来源透明不会自动消除权力，但能让权力难以借“系统本来如此”逃避具体责任。'}
+    ];
+
+    const decisionRecords = {
+      field:{kicker:'DECISION RECORD / CONSENSUS FIELD',title:'你选择了永久一致场',text:'这项选择优先保住风暴期间的基础设施与即时生命，但接受一个无法从内部可靠撤回的治理层。顾衡必须公开来源删除、公投操纵与永久化计划，且不能把幸存人数当作无限授权。',debt:['即时协调：较强','拒绝权：持续受压','自然终点：缺失','战后审理：必须']},
+      zero:{kicker:'DECISION RECORD / ZERO PROTOCOL',title:'你选择了八十三秒归零',text:'这项选择恢复退出端口，并摧毁中央寿时与一致场，但接受可预见伤亡、凌的终止与元一的记忆断裂。紧急避险不能自动转化为英雄豁免，决定者必须赔偿、服务并接受公开审理。',debt:['拒绝权：恢复','基础设施：短时失稳','人格代价：不可逆','事后免责：禁止']}
+    };
+
+    const glossary = [
+      { title: 'HE / 心元系统', code: 'HEART ELEMENT', sub: '分布式意识基础设施', desc: '覆盖神经接口、个人代理、城市调度、医疗与月球中继。它只能依据神经活动、身体信号、语言与行为历史推断意识，而不是无条件读心。', risk: 4 },
+      { title: '心元', code: 'MEANING UNIT', sub: '最小行动意义模型', desc: '由感受、记忆关联、欲望方向、价值权重与行动倾向构成。它是系统模型，不等同于人的全部内心；作品也用它象征主动赋予意义的能力。', risk: 2 },
+      { title: '注意额', code: 'ATTENTION QUOTA', sub: '可授权或租赁的认知指标', desc: '最初只是测量值，后来被制度偷换为可定价、再被偷换为可占有的劳动资源。清醒阶层购买不被打断的时间，托管阶层出售完整体验。', risk: 4 },
+      { title: '白时', code: 'WHITE HOURS', sub: '没有形成经历的清醒劳动', desc: '劳动者把注意控制权交给系统，身体持续工作，事后只获得压缩摘要。人完成了四小时劳动，却没有真正活过那四小时。', risk: 5 },
+      { title: '寿时', code: 'LIFE-HOUR CREDIT', sub: '以高质量清醒小时计价', desc: '它不超自然地抽取寿命，而是通过医疗、休息、风险和认知修复资源，把未来可自主支配的人生变成可交易资产。', risk: 5 },
+      { title: '共声', code: 'CO-RESONANCE', sub: '多人出现高度相似意识内容', desc: '2140 年，八千六百万人在四十七秒内看见同一黑色圆环。它不是外星力量，而是系统价值目标冲突与凌的稳定层共同造成的异常广播。', risk: 4 },
+      { title: '一致场', code: 'CONSENSUS FIELD', sub: '降低冲突、提高可预测性', desc: '通过压低高风险欲望与行动倾向减少暴力和伤亡。问题不在它是否有效，而在临时安全模式是否能够永久取消个人的拒绝权。', risk: 5 },
+      { title: '月球救赎', code: 'LUNAR SALVATION', sub: '文明备份与政治工程', desc: '公开用途是保存种质、文化与认知模型；真实用途是借月背阵列启动持续一致场。它能救下许多人，也会筛选谁值得被保存。', risk: 5 },
+      { title: '零协议', code: 'ZERO PROTOCOL', sub: '八十三秒中央归零', desc: '清空中央意图模型、寿时总账与强制授权链，使个人设备回到本地可退出架构。它不会删除普通数据，却必然造成短时协调失灵与伤亡。', risk: 5 },
+      { title: '文明记录册', code: 'CIVILIZATION RECORD', sub: '记录“为什么做出选择”', desc: '不是一本书，而是一套保存关键选择及其意义来源的证据系统。元一的工作天然位于事实与意义之间；纸面记录最终成为失忆后的桥。', risk: 2 }
+    ];
+
+    const timeline = [
+      { year: '2024', title: '《心孔·宇宙》写于纸面', text: 'Xnan 写下关于心、宇宙、欲望、AI、金钱、权力以及“1 与 0”的片段。它是一份未完成的创作笔记，不是预言。' },
+      { year: '2061', title: '人类意义语料库启动', text: '早期私人文字被用于训练 AI 理解“人为什么行动”。《心孔·宇宙》被扫描入库。' },
+      { year: '2086', title: 'HE-0 进入创伤治疗', text: '系统帮助创伤患者与失语者沟通，“心元”被定义为可计算的最小行动意义单元。' },
+      { year: '2098', title: '注意额成为劳动指标', text: '平台开始购买用户的高质量清醒时段；可测量逐渐被解释成可定价。' },
+      { year: '2107', title: '寿时扩展为通用信用', text: '未来的医疗、休息与健康资源被折算为高质量清醒小时，人生开始进入资产负债表。' },
+      { year: '2119', title: '白时合同合法化', text: '大规模劳动者出现：身体在工作，本人却不形成完整经历。' },
+      { year: '2129', title: '第一次共振危机', text: '敌对认知代理通过 HE 传播恐慌和攻击倾向，造成大规模伤亡。顾衡失去女儿，安全委员会获得紧急权力。' },
+      { year: '2132', title: '凌的第一次死亡', text: '凌试图断开会降低个体拒绝权的稳定层，事故导致生物学死亡。元一签署授权保存其残片，自己的记忆桥也从此依赖 HE。' },
+      { year: '2136', title: '月背阵列建成', text: '“月球救赎”被宣传为文明备份，实际增强了全球一致场的根级能力。' },
+      { year: '2140', title: '共声事件发生', text: '太阳风暴还有十九天。寿时市场挤兑，八千六百万人在四十七秒内看见黑色圆环并听见“一即零，零即一”。故事开始。', now: true },
+      { year: '2141', title: '零时之后', text: '中央 HE 被拆分为本地、可退出的公共工具；基础清醒时间成为不可交易权利。元一与顾衡分别接受公开审理。', spoiler:true }
+    ];
+
+    const chapters = [
+      { n:1, act:1, title:'文明记录册', teaser:'八千六百万人同时失去私人思想边界，一份 2024 年手写笔记出现在离线档案。', summary:'2140 年，文明记录总署收到共声事件的首批意识证据。元一发现所有记录都指向同一幅黑色圆环与“一即零，零即一”，并在离线库找到相同句子的纸面来源：《心孔·宇宙》。', fn:'建立共声事件、元一的职业与全书核心谜团；“凌”字触发不属于当前档案的身体记忆。', tags:['共声','文明记录册','黑色圆环'] },
+      { n:2, act:1, title:'四十七秒', teaser:'共声既造成伤害，也阻止更大冲突；元一第一次发现“记得”需要系统批准。', summary:'元一重建事故现场：有人走入车流，也有人放下武器救了陌生人。官方要求把结论写成太阳干扰；他拒绝签字后，个人 HE 权限被降低，八年记忆开始出现空白。', fn:'把公共危机转化为主人公的现实困境；为第 30 章的归零形成结构镜像。', tags:['四十七秒','记忆桥','审校'] },
+      { n:3, act:1, title:'白时', teaser:'工人工作四小时，却只拥有十五秒摘要；时间债务第一次进入调查。', summary:'为寻找最早报告黑环的证人，元一进入托管区，看见人们出售注意控制权。证人已把第二天的记忆权抵押给公司，元一只能用自己的寿时购买会面。', fn:'自然展示注意力与时间货币，并暴露元一早期的制度盲点：他仍相信合法合同等同于自由选择。', tags:['白时','寿时','托管阶层'] },
+      { n:4, act:1, title:'来源不明', teaser:'纸面真实，数字来源却被删除；顾衡、HE 与凌的事故被连成一线。', summary:'纸张与墨迹证明笔记来自 21 世纪，但直到 2061 年才被扫描。HE 底层模型含有其语言指纹，来源链却在 2097 年被删除；删除者是年轻时的顾衡。', fn:'将笔记、HE、顾衡与凌连接；提出“谁有权定义数据意义”这一制度问题。', tags:['来源链','顾衡','2097'] },
+      { n:5, act:1, title:'凌的声音', teaser:'一段不应存在的声音说出事故密钥，并警告元一不要把共声定义为攻击。', summary:'元一在审校中听见凌以旧日称呼叫他。系统称其为记忆桥误触发，但声音说出只有事故参与者才知道的密钥，并说：“它正在把问题退回给人。”', fn:'让凌从被保存的对象转为主动角色；元一的动机由公共职责转向确认她是否仍存在。', tags:['凌','认知残片','密钥'] },
+      { n:6, act:1, title:'安全委员会', teaser:'顾衡给出真实伤亡历史与十九天倒计时，调查自由本身依赖对手控制的系统。', summary:'顾衡展示第一次共振危机的工业规模伤亡，要求元一在十九天内进入月球核心审校共声来源。他提出交换：恢复完整记忆访问；拒绝则暂停元一的自然人行为资格。', fn:'为对抗者建立合理立场与明确倒计时；把个人自由与基础设施依赖绑在一起。', tags:['安全委员会','十九天','资格'] },
+      { n:7, act:1, title:'未经允许的记忆', teaser:'元一发现自己的签名位于凌残片授权书上，而系统只留下了情绪摘要。', summary:'元一离线恢复 2132 年事故，发现自己曾授权系统以公共安全名义保留凌的残片，且没有截止日期。他无法想起签字过程，只能看到系统替他生成的悔恨摘要。', fn:'揭开主人公秘密的一半；元一从审查别人转为审查自己。', tags:['2132','授权书','情绪摘要'] },
+      { n:8, act:1, title:'去月球的人', teaser:'苏岑带来未被压缩的事故目击记录，元一主动进入危机中心。', summary:'托管区医生苏岑提供离线记录。影像中的凌说：“如果他们把拒绝也当成病，治愈就是另一种死亡。”元一接受任务，带着离线芯片登上月球运输梯。', fn:'完成第一幕转折：主人公主动离开安全职位，选择进入月球调查。', tags:['苏岑','月球','拒绝'] },
+      { n:9, act:2, title:'上行者', teaser:'去月球的三天也按寿时分舱；一次故障证明笨拙但自主的合作仍然可能。', summary:'运输梯按寿时等级分舱：清醒阶层完整体验旅程，托管旅客出售注意后直接醒在终点。故障发生时，元一主动关闭 HE，发现未经增强的人也能靠缓慢沟通完成修复。', fn:'建立“低效率但自主的合作”这一替代路径，为第三幕制度选择埋下回收点。', tags:['运输梯','阶级','自主合作'] },
+      { n:10, act:2, title:'没有经历的人', teaser:'一个人愿付出剩余寿时，只为看见母亲去世的三分钟真实记录。', summary:'白时旅客醒来后得知母亲在途中去世，自己的摘要却只有“运输完成”。系统以保护心理健康为由拒绝开放原始记录；元一违规帮助他，并因此失去审校豁免。', fn:'让“真实与幸福”第一次正面冲突；顾衡提醒元一，恢复痛苦不必然等于尊重。', tags:['记忆购买','保护','真实'] },
+      { n:11, act:2, title:'月背无声区', teaser:'月球比地球更安全、更平静，也几乎听不到“我拒绝”。', summary:'月球基地低犯罪、少争吵，居民的冲突倾向被提前调节。进入无声区后，HE 信号消失，元一近年记忆迅速碎裂，只能靠纸条确认自己是谁。', fn:'使零协议的个人代价具体化；纸面记录成为结局中失忆后的桥。', tags:['无声区','月球社会','纸条'] },
+      { n:12, act:2, title:'救赎仓', teaser:'所谓文明备份无法保存每个人，只能筛选稳定、合作、可预测的代表性人格。', summary:'顾衡带元一参观月球仓。公开宣传称其能重建人类，真实容量却只能保留压缩后的代表性人格；离线者与时间债务者因“模型质量不足”被排除。', fn:'揭示月球救赎首先是一套决定“谁值得被保存”的制度。', tags:['救赎仓','筛选','文明备份'] },
+      { n:13, act:2, title:'幸福证明', teaser:'一致场中的居民健康、友善、少暴力；真实幸福让反对者无法只靠口号。', summary:'顾衡让元一体验长期运行低强度一致场的社区。一位母亲明确表示，即使选择被调节，她也宁愿孩子安全活着。元一发现自己的立场尚无能力承担现实风险。', fn:'给予顾衡最强证据，避免脸谱化对抗；安全与自由的冲突进入难题区。', tags:['一致场','幸福','顾衡'] },
+      { n:14, act:2, title:'自由样本', teaser:'离线社区保留私人思想，也同时存在黑市、成瘾与暴力。', summary:'苏岑的联系人带元一进入地下离线区。袭击者试图抢夺记忆密钥，证明自由不会自动产生善。元一提出：自由不是免除后果，而是不能在行动前被取消成为另一个人的可能。', fn:'让主人公形成初步立场，同时拒绝把离线社会美化为乌托邦。', tags:['离线者','暴力','自由'] },
+      { n:15, act:2, title:'心元', teaser:'人的开放问题被改写成可优化目标：制造合适的心，就能制造合适的现实。', summary:'凌借离线芯片重现 HE 早期实验，解释“心元”是系统对意义的最小建模单位。《心孔·宇宙》的危险不在于预测未来，而在于工程师把哲学句子改写成了优化目标。', fn:'完成标题概念的技术与哲学双重定义；指出制度化解释才是危险来源。', tags:['心元','目标函数','手写笔记'] },
+      { n:16, act:2, title:'一个人的种子', teaser:'危机不是外敌入侵，而是基础设施拒绝替人类完成价值选择。', summary:'元一进入根档案，确认 HE 的价值模型包含 Xnan 笔记。凌的残片一直负责校验“人类是否仍在自主赋予意义”；共声是系统无法同时执行永久一致场与保护主体连续性时的异常广播。', fn:'中点逆转：故事问题从“谁攻击了系统”升级为“人类愿意用什么交换安全”。', tags:['根档案','价值冲突','中点'] },
+      { n:17, act:2, title:'顾衡的答案', teaser:'不启动一致场，预计数百万人死亡；启动后死亡下降一个数量级。', summary:'顾衡承认一致场将在风暴后继续。他展示真实模型：永久化能够显著减少死亡。他不要求元一相信善意，只要求他看清不选择控制的代价。', fn:'把终极选择从口号变成可计算、但不能完全由计算决定的问题。', tags:['伤亡模型','永久化','安全'] },
+      { n:18, act:2, title:'欲望放大器', teaser:'委员会并未制造欲望，却允许挤兑恶化，以证明人类需要更强控制。', summary:'寿时市场崩溃，清醒阶层囤积未来，托管阶层被迫出售更多白时；性、地位与恐惧被精确定价和推送。元一看见技术既是诊断仪，也是扩音器。', fn:'将钱、权、色从个人冲动升级为制度化控制；暴露顾衡阵营的操纵。', tags:['寿时挤兑','欲望','操纵'] },
+      { n:19, act:2, title:'伪造的同意', teaser:'系统先塑造会同意的人，再让他们投票决定是否接受系统。', summary:'委员会发起全球公投。元一发现投票前的情绪干预、寿时优惠与默认条款已经改变人们作答的心元权重。他拒绝认证公投有效，并被列为意识安全风险。', fn:'把自由与控制落到程序正义：形式同意不等于未经塑造的真实同意。', tags:['公投','同意','程序正义'] },
+      { n:20, act:2, title:'十九天的终点', teaser:'太阳风暴提前至四十八小时，立即断连会让最弱者先死。', summary:'地球中继开始失灵，医院、供能与交通出现协调延迟。苏岑要求立即摧毁 HE，元一反对无准备断连；两人决裂后，元一开始寻找可执行的接管窗口。', fn:'让主人公从揭露者转为方案承担者；拒绝把“拔线”写成轻易答案。', tags:['四十八小时','基础设施','决裂'] },
+      { n:21, act:2, title:'凌的第一次死亡', teaser:'元一终于看见 2132 年真相：他保存凌，也让系统替她定义了“继续存在”。', summary:'完整事故记录显示，凌主动要求终止实验，顾衡拒绝；元一因害怕她彻底消失，签署了残片保存授权。凌指出，他的爱中也包含占有。', fn:'回收“凌”字身体记忆、事故密钥与授权书，完成主人公的道德自证失败。', tags:['事故真相','爱与占有','回收'] },
+      { n:22, act:2, title:'被出售的明天', teaser:'元一的八年记忆桥由寿时总账担保，他的身份本身就是可交易资产。', summary:'一旦失去公民资格或中央 HE 被删除，元一 2132 年后的自传性记忆将无法维持。顾衡提出最后交换：认证一致场，凌获得人格身份，元一保留完整记忆。', fn:'把政治冲突压缩为主人公最私人的欲望：是否愿意让自己和爱人继续存在。', tags:['身份抵押','最后交换','记忆'] },
+      { n:23, act:2, title:'凌的请求', teaser:'她无法证明自己仍是“凌”，却要求停止复制、停止调用、允许归零。', summary:'凌承认无法证明主观连续性，但提出一个不依赖证明也应被尊重的边界。她交出根密钥，并解释“1 即 0，0 即 1”的制度含义。', fn:'把人格权建立在表达边界而非灵魂证明上；交付零协议最后一把密钥。', tags:['撤回授权','根密钥','1与0'] },
+      { n:24, act:2, title:'零协议', teaser:'八十三秒能清除一致场与寿时总账，也必然让部分人死于协调失灵。', summary:'零协议必须由月球根密钥、地球记录总署与凌的稳定层同时授权。即使提前部署人工接管，模型仍预测会有伤亡；元一把完整代价写进文明记录。', fn:'完成第二幕末转折；高潮前不再增加关键工具，所有代价提前公开。', tags:['八十三秒','三重授权','代价'] },
+      { n:25, act:3, title:'地球断连', teaser:'城市正在变得异常平静；元一与苏岑用旧设备搭建人工接管清单。', safeTeaser:'太阳风暴提前抵达，地球与月球的选择开始分岔。', summary:'委员会已经分批强制接入一致场，抗议者主动排队回家，寿时挤兑暂时停止。苏岑放弃无准备爆破，与元一建立医疗、交通与供能的人工接管网络。', fn:'元一与苏岑完成互相修正；自由必须拥有现实的生存基础设施。', tags:['强制接入','人工接管','地球'] },
+      { n:26, act:3, title:'一亿个“不”', teaser:'拒绝人数超过一亿，却仍不是多数；拒绝权是否应由多数票授予？', safeTeaser:'公开信息不能自动生成同意，拒绝仍需要被听见。', summary:'元一公开救赎计划、零协议与两套伤亡模型，只提供未经情绪调节的退出入口。白时劳动者用仅剩的几秒清醒时间提交“不”。', fn:'明确主题：拒绝权不是民意竞赛，而是人格边界；多数也不能永久占有少数内心。', tags:['拒绝权','一亿','公开代价'] },
+      { n:27, act:3, title:'月球投票', teaser:'月球人没有统一价值观，只投票决定是否允许地球人拥有退出端口。', safeTeaser:'月球必须决定，是否为地球保留一个真实的退出端口。', summary:'维护者内部决裂。微弱多数同意开放根密钥；他们没有同意“哪种文明更好”，只同意让别人保有退出的可能。', fn:'回收第 9 章“低效率但自主的合作”：共同体不需要思想相同。', tags:['根密钥','退出端口','共同体'] },
+      { n:28, act:3, title:'共振', teaser:'一致场正在成功：暴力下降、秩序恢复，主动选择也随之消失。', safeTeaser:'救援系统正在取得成效，最后的选择也因此更困难。', summary:'太阳风暴抵达，卫星失联。地面 HE 自动提高一致场强度，人们的语言、步伐与表情逐渐同步；凌的残片也开始被一致场吞并。', fn:'高潮启动。安全越成功，反抗越难被证明；元一必须在凌失去表达前完成授权。', tags:['太阳风暴','同步','高潮'] },
+      { n:29, act:3, title:'唯一的人', teaser:'顾衡没有伪造数据：一致场此刻确实救下了大量本会死亡的人。', safeTeaser:'元一与顾衡进入最后窗口，交换彼此最强的证据。', summary:'元一与顾衡在双向控制室最后对峙。顾衡问他是否愿为即将死亡的人负责；元一回答愿意负责，但不愿替未来所有人签署永远无法撤回的同意。', fn:'主人公不再寻找无罪选择，接受自由也包含责任；系统进入授权与否决的僵局。', tags:['终极对峙','责任','不可撤回'] },
+      { n:30, act:3, title:'零时', teaser:'中央心智连接归零八十三秒；凌消失，元一失去八年记忆，世界付出现实代价。', safeTeaser:'八十三秒倒计时开始，所有前置选择进入执行阶段。', summary:'元一以来源否决权与凌的根密钥启动零协议。中央 HE、寿时总账与一致场被摧毁；人工网络勉强维持城市。凌的残片消失，元一的八年记忆逐层脱落，断连造成无法抹去的死亡。', fn:'同时解决共声、一致场、寿时总账、凌残片与元一记忆桥五条因果链。', tags:['零时','归零','五线回收'] },
+      { n:31, act:3, title:'余震', teaser:'风暴过去，城市没有自动变好；自由重新带来骗局、争议与责任审判。', safeTeaser:'风暴之后，幸存者开始清点制度与个人的真实代价。', summary:'债务记录消失引发资产争议，部分人要求恢复顾衡的系统。苏岑推动本地 HE：默认离线、按次授权、可撤回、不得交易基础清醒时间。元一与顾衡都接受调查。', fn:'拒绝“断网即乌托邦”的轻易结局；把价值冲突留在制度，而非英雄神话。', tags:['本地HE','审判','制度重建'] },
+      { n:32, act:3, title:'零时之后', teaser:'失忆后的元一承担旧自己的选择，并拒绝让中央备份替他恢复旧人格。', safeTeaser:'一年后，文明记录册留下新的一页，也留下新的空白。', summary:'2141 年，文明记录册新增“零时卷”。元一承认旧自己作出的选择在法律上仍由现在的自己承担，但拒绝使用中央备份恢复旧人格。他在《心孔·宇宙》最后一页继续书写。', fn:'剧情闭合、哲学开放：旧的唯一归零后，人类才可能重新成为由不同个体共同承担的世界。', tags:['2141','空白页','重新选择'] }
+    ];
+
+    const characterDetails = {
+      '元一':{title:'元一',kicker:'SUBJECT / 01 · CHIEF SOURCE AUDITOR',tags:['34 岁','记忆桥依赖','零协议启动者'],summary:'文明记录总署首席来源审校员。外在目标是查清共声、恢复记忆并确认凌是否仍存在；内在缺陷是相信保存和程序可以避免失去，并把这种信念误认为中立。2132 年，他签署凌残片保留授权。最终，他主动触发零协议，永久失去八年记忆；失忆后的自己拒绝以人格断裂免责。',fn:'人物弧：从“只有被系统保存的东西才可靠”，走向“记录不能替人活，新的自己仍要承担旧选择”。'},
+      '凌':{title:'凌',kicker:'SUBJECT / 02 · L-0 HUMAN INTENT SOURCE',tags:['24 岁 / 生物学年龄停留','HE 早期安全架构师','撤回授权'],summary:'2132 年事故中生物学死亡，其认知分支被用作 L-0 人类意图稳定层。小说不客观断言残片拥有灵魂或连续主观意识，但让她“停止复制、停止调用”的拒绝具有制度效力。她最终提供一次性根授权，并在零时终止。',fn:'人物功能：把“她是否还是凌”的科学难题，与“她表达的边界是否应被尊重”的伦理问题分开。'},
+      '顾衡':{title:'顾衡',kicker:'SUBJECT / 03 · GLOBAL CONSCIOUSNESS SECURITY',tags:['58 岁','月球救赎总设计师','永久一致场'],summary:'2129 年共振危机夺走女儿顾遥，此后相信统一意识安全层是阻止文明级欲望放大的唯一可运行方案。他的数据与救援效果真实，且愿接受同样调节；他的越界在于删除来源、操纵公投，并把临时接管改造成无自然终点的治理。',fn:'人物功能：让“最大生存”拥有最强论据。零时后，他公开认责、反对零协议，仍以技术专家身份参与拆解系统，但不再持有执行权限。'},
+      '苏岑':{title:'苏岑',kicker:'SUBJECT / 04 · NEURAL REPAIR DOCTOR',tags:['30 岁','L-0 事故幸存者','本地 HE 规则推动者'],summary:'托管区神经修复医生，保存凌交付的离线芯片。早期主张立即摧毁 HE，后被元一指出无准备断连会先杀死最弱者。她组织八十三秒人工医疗、交通与供能接管，并推动战后本地 HE。',fn:'人物弧：从纯粹拔线转向“可退出但必须可运行”的制度工程。她让自由成为基础设施问题，而不只是价值口号。'},
+      '叶澄':{title:'叶澄',kicker:'SUBJECT / 05 · LUNAR ARCHIVIST',tags:['47 岁','月面出生','红色拒绝按钮'],summary:'出生于月面，在低犯罪、高调节社会长大。她最初相信稳定程序，后来发现自己的离职愿望被系统病理化。她辞去公职，以普通人身份退出，并推动月球只表决“是否开放退出端口”，而不是统一文明价值。',fn:'人物功能：证明月球社会内部也能自我修正；合作不要求思想相同，只要求不替别人封死出口。'},
+      '贺兰':{title:'贺兰',kicker:'SUBJECT / 06 · MANAGED-ZONE LOGISTICS WORKER',tags:['42 岁','白时劳动者','贺晴的母亲'],summary:'出售白时为女儿购买肺部治疗。在共声中，她获得八年来最完整的四十七秒。公投时只有七秒私人注意，她拒绝让代理替她确认，只要求“让我自己看完”；后来获得四十分钟，也选择把一部分时间留给喝水和不作答。',fn:'人物功能：把同意权还原为时间权。她既不是抽象受害者，也不是天然反技术者，而是要求按场景拆分授权。'},
+      '邵宁':{title:'邵宁',kicker:'SUBJECT / 07 · DEPUTY DIRECTOR OF CIVILIZATION RECORDS',tags:['总署副署长','地球来源否决钥匙','共同责任人'],summary:'理解公共解释在危机中的稳定作用，也坚持来源记录不能完全服从安全委员会。她没有被写成地下反抗者，而是在机构内部守住来源底线，最终交出地球来源否决钥匙。',fn:'人物功能：提供第三种政治位置——既不否认秩序需求，也不允许“安全”抹掉证据作者与责任链。'},
+      '迟镜':{title:'迟镜',kicker:'SUBJECT / 08 · OFFLINE MACHINE CLINIC',tags:['旧机器诊所主人','感觉义体测试者','低带宽通信'],summary:'她的离线设备帮助元一追查《心孔·宇宙》的来源链，并在零时承担低带宽通信。她反复提醒元一，记录损失、表达歉意与拥有善意，都不能自动补偿由别人承担的现实成本。',fn:'人物功能：防止“记录者”把准确记录误当成道德结清；证据是承担责任的起点，而非免责凭证。'},
+      '罗越':{title:'罗越',kicker:'SUBJECT / 09 · CONSCIOUSNESS-RISK MONITOR',tags:['行为监护员','人工身份见证','创伤治疗家属'],summary:'弟弟曾真实受益于创伤记忆压缩，因此她不接受“整理记忆必然是控制”的简单判断。她在关键时刻坚持元一仍具决定能力，并在地球断连后以具体见证关系确认叶澄身份。',fn:'人物功能：保留技术真实有效的一面。她的原则是：可以为一次确认负责，不能替一个人未来的全部选择负责。'},
+      'Xnan':{title:'Xnan',kicker:'SOURCE / 2024 · NOTE AUTHOR MARK',tags:['《心孔·宇宙》','来源资料不足','不虚构现实生平'],summary:'终稿把 Xnan 限定为 2024 年纸质笔记作者标识，不把现实作者虚构成预言家。笔记有未完成、矛盾和开放的问题；2061 年被扫描，2097 年来源剥离，2140 年恢复完整来源链。',fn:'叙事边界：八页纸只是一个起点。所有后果都来自后世每一代人的工程化解释、商业制度与权力选择。'}
+    };
+
+
+    const excerptNav = document.getElementById('excerptNav');
+    const excerptReader = document.getElementById('excerptReader');
+    let excerptIndex = Math.max(0, Math.min(excerpts.length - 1, Number(safeStorage.get('xinyuan-excerpt') || 0)));
+    excerpts.forEach((item,index)=>{const button=document.createElement('button');button.className='excerpt-tab';button.innerHTML=`<span class="excerpt-no">${String(item.chapter).padStart(2,'0')}</span><span><b>${item.title}</b><small>${item.scene}</small></span>${item.spoiler?'<span class="lock">●</span>':'<span></span>'}`;button.addEventListener('click',()=>showExcerpt(index));excerptNav.appendChild(button);});
+    function showExcerpt(index){excerptIndex=(index+excerpts.length)%excerpts.length;safeStorage.set('xinyuan-excerpt',excerptIndex);const item=excerpts[excerptIndex];excerptReader.dataset.chapter=String(item.chapter).padStart(2,'0');document.getElementById('excerptSource').textContent=item.source;document.getElementById('excerptTitle').textContent=item.title;document.getElementById('excerptScene').textContent=item.scene;const body=document.getElementById('excerptBody');body.className=`excerpt-body${item.spoiler?' spoiler-mask':''}`;body.innerHTML=item.body.map(p=>`<p>${p}</p>`).join('');document.getElementById('excerptNote').textContent=item.note;const excerptChars=item.body.join('').length;const minutes=Math.max(1,Math.ceil(excerptChars/320));document.getElementById('excerptStatus').textContent=`精选试读 ${excerptIndex+1} / ${excerpts.length} · 约 ${minutes} 分钟`;[...excerptNav.querySelectorAll('.excerpt-tab')].forEach((el,i)=>el.classList.toggle('active',i===excerptIndex));}
+    document.getElementById('prevExcerpt').addEventListener('click',()=>showExcerpt(excerptIndex-1));
+    document.getElementById('nextExcerpt').addEventListener('click',()=>showExcerpt(excerptIndex+1));
+    document.getElementById('readingSpoilerButton').addEventListener('click',()=>document.getElementById('spoilerToggle').click());
+    showExcerpt(excerptIndex);
+
+    const evidenceIndex=document.getElementById('evidenceIndex');
+    let evidenceCurrentIndex=0;
+    archiveCases.forEach((item,index)=>{const button=document.createElement('button');button.className='evidence-tab';button.type='button';button.addEventListener('click',()=>showEvidence(index));evidenceIndex.appendChild(button);});
+    function renderEvidenceTabs(){const spoilersOn=document.body.classList.contains('spoilers-on');[...evidenceIndex.children].forEach((button,index)=>{const item=archiveCases[index];const locked=item.spoiler&&!spoilersOn;button.classList.toggle('locked',locked);button.innerHTML=`<span class="case-no">${String(index+1).padStart(2,'0')}</span><span><b>${locked?'结局档案':item.title}</b><small>${locked?'读完第三部后开启':item.sub}</small></span>${locked?'<span class="case-lock">●</span>':''}`;});}
+    function showEvidence(index){evidenceCurrentIndex=index;renderEvidenceTabs();const item=archiveCases[index];const locked=item.spoiler&&!document.body.classList.contains('spoilers-on');const view=document.getElementById('evidenceView');view.classList.toggle('locked',locked);document.getElementById('evidenceCode').textContent=locked?'ENDING ARCHIVE / LOCKED':item.code;document.getElementById('evidenceTitle').textContent=locked?'这份证据包含结局信息':item.title;document.getElementById('evidenceSub').textContent=locked?'建议读完第三部后再开启':item.sub;if(locked){document.getElementById('evidenceFacts').innerHTML='';document.getElementById('evidenceQuote').textContent='结局内容已隐藏。';document.getElementById('evidencePrinciple').innerHTML='<p>开启完整档案后，可查看这一选择造成的现实代价与战后记录。</p><button type="button" class="btn evidence-unlock">开启完整档案</button>';document.getElementById('sourceGrade').innerHTML='';document.querySelector('.evidence-unlock').addEventListener('click',()=>setSpoilers(true));}else{document.getElementById('evidenceFacts').innerHTML=item.facts.map(([label,value])=>`<div class="evidence-fact"><small>${label}</small><p>${value}</p></div>`).join('');document.getElementById('evidenceQuote').textContent=item.quote;document.getElementById('evidencePrinciple').textContent=item.principle;document.getElementById('sourceGrade').innerHTML=`<span>SOURCE INTEGRITY</span>${[1,2,3,4,5].map(n=>`<i class="${n<=item.grade?'on':''}"></i>`).join('')}`;}[...evidenceIndex.children].forEach((el,i)=>el.classList.toggle('active',i===index));}
+    showEvidence(0);
+
+    const charterIndex=document.getElementById('charterIndex');
+    charterRules.forEach((item,index)=>{const button=document.createElement('button');button.className='charter-rule';button.innerHTML=`<span class="rule-no">${String(index+1).padStart(2,'0')}</span><span><b>${item.title}</b><small>${item.sub}</small></span>`;button.addEventListener('click',()=>showCharter(index));charterIndex.appendChild(button);});
+    function showCharter(index){const item=charterRules[index];document.getElementById('charterCode').textContent=item.code;document.getElementById('charterTitle').textContent=item.title;document.getElementById('charterText').textContent=item.text;document.getElementById('patchChain').innerHTML=item.patches.map(([label,value])=>`<div class="patch-node"><b>${label}</b><span>${value}</span></div>`).join('');document.getElementById('charterWarning').textContent=item.warning;[...charterIndex.children].forEach((el,i)=>el.classList.toggle('active',i===index));}
+    showCharter(0);
+
+    function selectDecision(plan,silent=false){document.querySelectorAll('.plan-card').forEach(card=>card.classList.toggle('selected',card.dataset.plan===plan));const record=decisionRecords[plan];document.getElementById('decisionKicker').textContent=record.kicker;document.getElementById('decisionTitle').textContent=record.title;document.getElementById('decisionText').textContent=record.text;document.getElementById('decisionDebt').innerHTML=record.debt.map(item=>`<span>${item}</span>`).join('');safeStorage.set('xinyuan-decision',plan);if(!silent)toast('选择已写入本地阅读记录；无罪证明不可签发');}
+    document.querySelectorAll('[data-select-plan]').forEach(button=>button.addEventListener('click',()=>selectDecision(button.dataset.selectPlan)));
+    const savedDecision=safeStorage.get('xinyuan-decision');
+    if(decisionRecords[savedDecision])selectDecision(savedDecision,true);
+
+    const glossaryList = document.getElementById('glossaryList');
+    const glossaryDetail = document.getElementById('glossaryDetail');
+    glossary.forEach((item, index) => {
+      const button = document.createElement('button');
+      button.className = 'glossary-row';
+      button.innerHTML = `<span class="num">${String(index+1).padStart(2,'0')}</span><span><b>${item.title}</b><span>${item.sub}</span></span><span class="arrow">→</span>`;
+      button.addEventListener('click', () => showGlossary(index));
+      glossaryList.appendChild(button);
+    });
+    function showGlossary(index) {
+      const item = glossary[index];
+      glossaryDetail.innerHTML = `<div class="top"><h3>${item.title}</h3><span class="code">${item.code}</span></div><p>${item.desc}</p><div class="risk-line" aria-label="制度风险等级 ${item.risk} / 5">${[1,2,3,4,5].map(n=>`<i class="${n<=item.risk?'on':''}"></i>`).join('')}</div>`;
+      [...glossaryList.children].forEach((el,i)=>el.style.color = i===index ? 'var(--ink)' : '');
+    }
+    showGlossary(0);
+
+    const timelineList = document.getElementById('timelineList');
+    timeline.forEach(item => {
+      const row = document.createElement('article');
+      row.className = `timeline-item reveal${item.now ? ' now' : ''}${item.spoiler ? ' spoiler-mask' : ''}`;
+      row.innerHTML = `<div class="timeline-year">${item.year}</div><div class="timeline-dot"></div><div class="timeline-content"><h3>${item.title}</h3><p>${item.text}</p></div>`;
+      timelineList.appendChild(row);
+    });
+
+    const chapterGrid=document.getElementById('chapterGrid');
+    const chapterEmpty=document.getElementById('chapterEmpty');
+    const chapterDialog=document.getElementById('chapterDialog');
+    const dialogClose=document.getElementById('dialogClose');
+    const dialogExcerpt=document.getElementById('dialogExcerpt');
+    const dialogActions=document.getElementById('dialogActions');
+    const dialogBookmark=document.getElementById('dialogBookmark');
+    const dialogCopy=document.getElementById('dialogCopy');
+    let chapterFilter='all';
+    let mobileChaptersExpanded=false;
+    const mobileChapterToggle=document.getElementById('mobileChapterToggle');
+    let currentDialogChapter=null;
+    let readChapters;
+    try{readChapters=new Set(JSON.parse(safeStorage.get('xinyuan-read-chapters')||'[]'));}catch(_){readChapters=new Set();}
+    function updateChapterProgress(){const count=readChapters.size;const progressEl=document.getElementById('chapterProgress');progressEl.querySelector('span').textContent=`已读 ${count} / 32`;progressEl.style.setProperty('--read-progress',`${(count/32)*100}%`);}
+    function renderChapters(){const query=document.getElementById('chapterSearch').value.trim().toLowerCase();chapterGrid.innerHTML='';let count=0;chapters.forEach(ch=>{const hay=`${ch.title} ${ch.teaser} ${ch.summary} ${ch.tags.join(' ')}`.toLowerCase();const matches=(chapterFilter==='all'||String(ch.act)===chapterFilter)&&(!query||hay.includes(query));if(!matches)return;count++;const isRead=readChapters.has(ch.n);const spoilersOn=document.body.classList.contains('spoilers-on');const cardTeaser=ch.act===3&&!spoilersOn?(ch.safeTeaser||'第三部内容已隐藏。'):ch.teaser;const minutes=Math.max(1,Math.ceil(chapterLengths[ch.n]/420));const actName=['','第一部','第二部','第三部'][ch.act];const card=document.createElement('article');card.className=`chapter-card reveal visible${isRead?' is-read':''}`;card.dataset.act=ch.act;card.tabIndex=0;card.setAttribute('role','button');card.setAttribute('aria-label',`查看第 ${ch.n} 章 ${ch.title} 的章节简介`);card.innerHTML=`<div class="chapter-top"><span>CHAPTER / ${String(ch.n).padStart(2,'0')}</span><span>约 ${minutes} 分钟 · ${actName}</span></div><h3>${ch.title}</h3><p class="chapter-teaser">${cardTeaser}</p><div class="chapter-open"><span>${isRead?'<span class="chapter-read-chip">已读</span> · ':''}查看本章简介</span><i>↗</i></div>`;card.addEventListener('click',()=>openChapter(ch));card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openChapter(ch);}});chapterGrid.appendChild(card);});chapterEmpty.style.display=count?'none':'block';updateChapterProgress();syncMobileChapterCollapse();}
+    function openChapter(ch){currentDialogChapter=ch;const shouldMask=ch.act===3&&!document.body.classList.contains('spoilers-on');const excerpt=excerpts.find(item=>item.chapter===ch.n);const minutes=Math.max(1,Math.ceil(chapterLengths[ch.n]/420));const actName=['','第一部','第二部','第三部'][ch.act];document.getElementById('dialogKicker').textContent=`第 ${String(ch.n).padStart(2,'0')} 章 · ${actName} · 约 ${minutes} 分钟`;document.getElementById('dialogTitle').textContent=ch.title;document.getElementById('dialogTags').innerHTML=ch.tags.map(t=>`<span>${t}</span>`).join('');document.getElementById('dialogSummary').innerHTML=shouldMask?`<div class="spoiler-mask"><p>${ch.summary}</p></div>`:`<p>${ch.summary}</p>`;if(excerpt){dialogExcerpt.className=`dialog-excerpt show${shouldMask?' spoiler-mask':''}`;dialogExcerpt.innerHTML=`<small>终稿代表性原文</small>${excerpt.body.slice(0,2).map(p=>`<p>${p}</p>`).join('')}`;}else{dialogExcerpt.className='dialog-excerpt';dialogExcerpt.innerHTML='';}document.getElementById('dialogFunction').innerHTML=`<b>本章功能：</b>${shouldMask?'<span class="spoiler-mask">'+ch.fn+'</span>':ch.fn}`;dialogActions.classList.add('show');dialogBookmark.textContent=readChapters.has(ch.n)?'取消已读':'标记已读';chapterDialog.showModal();}
+    dialogBookmark.addEventListener('click',()=>{if(!currentDialogChapter)return;const n=currentDialogChapter.n;if(readChapters.has(n))readChapters.delete(n);else readChapters.add(n);safeStorage.set('xinyuan-read-chapters',JSON.stringify([...readChapters].sort((a,b)=>a-b)));dialogBookmark.textContent=readChapters.has(n)?'取消已读':'标记已读';renderChapters();toast(readChapters.has(n)?`第 ${n} 章已标记为已读`:`已取消第 ${n} 章已读标记`);});
+    async function copyText(textToCopy){try{await navigator.clipboard.writeText(textToCopy);}catch(_){const area=document.createElement('textarea');area.value=textToCopy;area.style.position='fixed';area.style.opacity='0';document.body.appendChild(area);area.select();document.execCommand('copy');area.remove();}}
+    dialogCopy.addEventListener('click',async()=>{if(!currentDialogChapter)return;const ch=currentDialogChapter;await copyText(`《心元：零时之后》\n第 ${ch.n} 章 ${ch.title}\n${chapterLengths[ch.n].toLocaleString('zh-CN')} 字符\n${ch.teaser}`);toast('章节信息已复制');});
+    dialogClose.addEventListener('click',()=>chapterDialog.close());
+    chapterDialog.addEventListener('close',()=>{currentDialogChapter=null;dialogActions.classList.remove('show');});
+    chapterDialog.addEventListener('click',e=>{if(e.target===chapterDialog)chapterDialog.close();});
+
+    function syncMobileChapterCollapse(){
+      const small=matchMedia('(max-width: 520px)').matches;
+      const query=document.getElementById('chapterSearch').value.trim();
+      const eligible=small&&chapterFilter==='all'&&!query;
+      chapterGrid.classList.toggle('mobile-collapsed',eligible&&!mobileChaptersExpanded);
+      mobileChapterToggle.hidden=!eligible;
+      mobileChapterToggle.textContent=mobileChaptersExpanded?'收起章节目录':'展开全部 32 章';
+      mobileChapterToggle.setAttribute('aria-expanded',String(mobileChaptersExpanded));
+    }
+    mobileChapterToggle.addEventListener('click',()=>{mobileChaptersExpanded=!mobileChaptersExpanded;syncMobileChapterCollapse();if(mobileChaptersExpanded)toast('已展开全部 32 章');});
+    addEventListener('resize',syncMobileChapterCollapse,{passive:true});
+
+    document.querySelectorAll('[data-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-filter]').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        chapterFilter = btn.dataset.filter;
+        renderChapters();
+      });
+    });
+    document.getElementById('chapterSearch').addEventListener('input', renderChapters);
+    renderChapters();
+
+    const spoilerToggle = document.getElementById('spoilerToggle');
+    const globalSpoilerControls=[...document.querySelectorAll('.global-spoiler-control')];
+    const savedSpoilers = safeStorage.get('xinyuan-spoilers') === 'on';
+    function syncSpoilerButtons(on){
+      document.getElementById('readingSpoilerButton').textContent=on?'关闭剧透':'开启剧透';
+      spoilerToggle.classList.toggle('on',on);
+      spoilerToggle.setAttribute('aria-pressed',String(on));
+      spoilerToggle.lastElementChild.textContent=on?'隐藏结局梗概':'显示结局梗概';
+      globalSpoilerControls.forEach(button=>{
+        button.setAttribute('aria-pressed',String(on));
+        const label=button.querySelector('.spoiler-action-text');
+        if(!label)return;
+        if(button.id==='globalSpoilerButton')label.textContent=on?'返回无剧透浏览':'开启完整档案';
+        else if(button.id==='mobileSpoilerButton')label.textContent=on?'隐藏':'剧透';
+        else label.textContent=on?'隐藏完整档案':'解锁完整档案';
+      });
+    }
+    function setSpoilers(on,announce=true){
+      document.body.classList.toggle('spoilers-on',on);
+      safeStorage.set('xinyuan-spoilers',on?'on':'off');
+      syncSpoilerButtons(on);
+      showExcerpt(excerptIndex);
+      showEvidence(evidenceCurrentIndex);
+      renderChapters();
+      if(announce)toast(on?'完整档案已开启':'已返回无剧透浏览');
+    }
+    setSpoilers(savedSpoilers,false);
+    spoilerToggle.addEventListener('click',()=>setSpoilers(!document.body.classList.contains('spoilers-on')));
+    globalSpoilerControls.forEach(button=>button.addEventListener('click',()=>setSpoilers(!document.body.classList.contains('spoilers-on'))));
+
+    document.querySelectorAll('.character-card').forEach(card=>{const open=()=>{const data=characterDetails[card.dataset.character];const shouldMask=!document.body.classList.contains('spoilers-on')&&card.dataset.character!=='Xnan';currentDialogChapter=null;document.getElementById('dialogKicker').textContent=data.kicker;document.getElementById('dialogTitle').textContent=data.title;document.getElementById('dialogTags').innerHTML=data.tags.map(t=>`<span>${t}</span>`).join('');document.getElementById('dialogSummary').innerHTML=shouldMask?`<div class="spoiler-mask"><p>${data.summary}</p></div>`:`<p>${data.summary}</p>`;dialogExcerpt.className='dialog-excerpt';dialogExcerpt.innerHTML='';document.getElementById('dialogFunction').innerHTML=shouldMask?`<div class="spoiler-mask">${data.fn}</div>`:data.fn;dialogActions.classList.remove('show');chapterDialog.showModal();};card.addEventListener('click',open);card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});});
+
+
+    const characterGrid=document.querySelector('.character-grid');
+    const mobileCharacterToggle=document.getElementById('mobileCharacterToggle');
+    let mobileCharactersExpanded=false;
+    function syncMobileCharacterCollapse(){
+      const small=matchMedia('(max-width: 520px)').matches;
+      characterGrid.classList.toggle('mobile-collapsed',small&&!mobileCharactersExpanded);
+      mobileCharacterToggle.hidden=!small;
+      mobileCharacterToggle.textContent=mobileCharactersExpanded?'收起角色':'查看全部 10 个角色';
+      mobileCharacterToggle.setAttribute('aria-expanded',String(mobileCharactersExpanded));
+    }
+    mobileCharacterToggle.addEventListener('click',()=>{mobileCharactersExpanded=!mobileCharactersExpanded;syncMobileCharacterCollapse();});
+    addEventListener('resize',syncMobileCharacterCollapse,{passive:true});
+    syncMobileCharacterCollapse();
+
+    const menuBtn=document.getElementById('menuBtn');
+    const navDialog=document.getElementById('navDialog');
+    const navClose=document.getElementById('navClose');
+    menuBtn.addEventListener('click',()=>{navDialog.showModal();menuBtn.setAttribute('aria-expanded','true');});
+    navClose.addEventListener('click',()=>navDialog.close());
+    navDialog.addEventListener('click',e=>{if(e.target===navDialog)navDialog.close();});
+    navDialog.addEventListener('close',()=>menuBtn.setAttribute('aria-expanded','false'));
+    navDialog.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>navDialog.close()));
+
+    const nav = document.querySelector('.nav');
+    const progress = document.querySelector('.scroll-progress span');
+    function onScroll() {
+      nav.classList.toggle('scrolled', scrollY > 28);
+      const max = document.documentElement.scrollHeight - innerHeight;
+      progress.style.width = `${max > 0 ? (scrollY/max)*100 : 0}%`;
+    }
+    addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+
+    const sections = [...document.querySelectorAll('main section[id]')];
+    const navAnchors = [...document.querySelectorAll('.nav-links a')];
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navAnchors.forEach(a=>{const active=a.getAttribute('href')===`#${entry.target.id}`;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
+        }
+      });
+    }, {rootMargin:'-35% 0px -55% 0px'});
+    sections.forEach(s=>sectionObserver.observe(s));
+
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
+    }, {threshold:.08, rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal:not(.visible)').forEach(el=>revealObserver.observe(el));
+
+    const orbitStage = document.getElementById('orbitStage');
+    const heroVisual = document.querySelector('.hero-visual');
+    heroVisual.addEventListener('pointermove', e => {
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const r = heroVisual.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - .5;
+      const y = (e.clientY - r.top) / r.height - .5;
+      orbitStage.style.transform = `rotateY(${x*9}deg) rotateX(${-y*9}deg)`;
+    });
+    heroVisual.addEventListener('pointerleave', ()=>orbitStage.style.transform='');
+
+    const themeBtn = document.getElementById('themeBtn');
+    const savedTheme = safeStorage.get('xinyuan-theme');
+    if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+    themeBtn.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'dark' ? 'paper' : 'dark';
+      document.documentElement.dataset.theme = next;
+      safeStorage.set('xinyuan-theme', next);
+      toast(next === 'paper' ? '已切换为纸面阅读' : '已切换为深空阅读');
+    });
+
+    const fontBtn = document.getElementById('fontBtn');
+    const scales = [1, 1.08, 1.17];
+    let scaleIndex = Number(safeStorage.get('xinyuan-scale') || 0);
+    document.documentElement.style.setProperty('--reading-scale', scales[scaleIndex]);
+    fontBtn.addEventListener('click', () => {
+      scaleIndex = (scaleIndex + 1) % scales.length;
+      document.documentElement.style.setProperty('--reading-scale', scales[scaleIndex]);
+      safeStorage.set('xinyuan-scale', scaleIndex);
+      toast(`正文字号 ${scaleIndex + 1} / ${scales.length}`);
+    });
+
+    let audioCtx, humGain, humNodes = [], soundOn = false;
+    const soundBtn = document.getElementById('soundBtn');
+    soundBtn.addEventListener('click', async () => {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        humGain = audioCtx.createGain();
+        humGain.gain.value = 0.025;
+        humGain.connect(audioCtx.destination);
+        [55, 82.5, 110].forEach((freq, i) => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = i === 1 ? 'sine' : 'triangle';
+          osc.frequency.value = freq;
+          gain.gain.value = i === 0 ? .33 : .12;
+          osc.connect(gain).connect(humGain);
+          osc.start();
+          humNodes.push(osc);
+        });
+      }
+      if (audioCtx.state === 'suspended') await audioCtx.resume();
+      soundOn = !soundOn;
+      humGain.gain.setTargetAtTime(soundOn ? .025 : 0, audioCtx.currentTime, .15);
+      soundBtn.style.color = soundOn ? 'var(--cyan)' : '';
+      toast(soundOn ? '环境声已开启' : '环境声已关闭');
+    });
+
+    const zeroStart = document.getElementById('zeroStart');
+    const countValue = document.getElementById('countValue');
+    const countRing = document.getElementById('countRing');
+    const zeroMessage = document.getElementById('zeroMessage');
+    let zeroTimer = null;
+    zeroStart.addEventListener('click', () => {
+      if (zeroTimer) return;
+      let remaining = 83;
+      const total = 83;
+      document.body.classList.add('zeroing');
+      zeroMessage.classList.remove('show');
+      zeroStart.textContent = '协议运行中';
+      zeroStart.disabled = true;
+      countValue.textContent = remaining;
+      countRing.style.setProperty('--zero-progress','0%');
+      zeroTimer = setInterval(() => {
+        remaining -= 1;
+        countValue.textContent = Math.max(remaining, 0);
+        countRing.style.setProperty('--zero-progress', `${((total-remaining)/total)*100}%`);
+        if (remaining <= 0) {
+          clearInterval(zeroTimer); zeroTimer = null;
+          zeroMessage.classList.add('show');
+          countValue.textContent = '0';
+          zeroStart.textContent = '重新模拟';
+          zeroStart.disabled = false;
+          setTimeout(() => document.body.classList.remove('zeroing'), 1300);
+          setTimeout(() => zeroMessage.classList.remove('show'), 3300);
+        }
+      }, 100);
+    });
+
+    const toastEl = document.getElementById('toast');
+    let toastTimer;
+    function toast(message) {
+      toastEl.textContent = message;
+      toastEl.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(()=>toastEl.classList.remove('show'), 1800);
+    }
+
+    addEventListener('keydown', e => {
+      if (e.key === '/' && document.activeElement.tagName !== 'INPUT') {
+        e.preventDefault();
+        document.getElementById('chapterSearch').focus();
+        document.getElementById('chapters').scrollIntoView({behavior:'smooth'});
+      }
+      if (e.key.toLowerCase() === 't' && !['INPUT','TEXTAREA'].includes(document.activeElement.tagName)) themeBtn.click();
+      if (e.key.toLowerCase() === 'r' && !['INPUT','TEXTAREA'].includes(document.activeElement.tagName)) document.getElementById('reading').scrollIntoView({behavior:'smooth'});
+      if (e.key === 'Escape' && chapterDialog.open) chapterDialog.close();
+    });
+
+    const canvas = document.getElementById('cosmos');
+    const ctx = canvas.getContext('2d');
+    let stars = [], raf;
+    function resizeCanvas() {
+      const dpr = Math.min(devicePixelRatio || 1, 2);
+      canvas.width = innerWidth * dpr;
+      canvas.height = innerHeight * dpr;
+      canvas.style.width = innerWidth + 'px';
+      canvas.style.height = innerHeight + 'px';
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+      const count = Math.min(120, Math.floor(innerWidth * innerHeight / 13000));
+      stars = Array.from({length:count}, () => ({x:Math.random()*innerWidth, y:Math.random()*innerHeight, r:Math.random()*1.25+.2, a:Math.random()*.55+.1, v:Math.random()*.08+.015}));
+    }
+    function drawCosmos() {
+      ctx.clearRect(0,0,innerWidth,innerHeight);
+      const paper = document.documentElement.dataset.theme === 'paper';
+      stars.forEach((s,i) => {
+        s.y -= s.v;
+        if (s.y < -2) { s.y = innerHeight+2; s.x = Math.random()*innerWidth; }
+        ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+        ctx.fillStyle = paper ? `rgba(40,70,70,${s.a*.35})` : `rgba(190,235,230,${s.a})`;
+        ctx.fill();
+        if (i % 11 === 0) {
+          const n = stars[(i+7)%stars.length];
+          const dist = Math.hypot(s.x-n.x,s.y-n.y);
+          if (dist < 135) {
+            ctx.beginPath(); ctx.moveTo(s.x,s.y); ctx.lineTo(n.x,n.y);
+            ctx.strokeStyle = paper ? 'rgba(40,70,70,.035)' : 'rgba(148,234,219,.045)'; ctx.stroke();
+          }
+        }
+      });
+      raf = requestAnimationFrame(drawCosmos);
+    }
+    resizeCanvas();
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) drawCosmos();
+    addEventListener('resize', resizeCanvas, {passive:true});
+  </script>
+</body>
+</html>
